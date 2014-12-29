@@ -18,7 +18,7 @@ public class Register {
 	public static void main(String[] args) throws IOException {
 		Register register = new Register();
 //		register.sendGet();
-		register.sendPost(getJSON());
+		register.sendPost(getJson());
 	}
 
 //	private void sendGet() throws IOException {
