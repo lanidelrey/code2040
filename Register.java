@@ -56,7 +56,7 @@ public class Register {
 		return json;
 	}
 	
-	private void sendPost(Content content) throws IOException {
+	private void sendPost(String content) throws IOException {
 		System.out.println("sending http POST request");
 		
 		String url = "http://challenge.code2040.org/api/register";
