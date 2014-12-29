@@ -48,7 +48,7 @@ public class Register {
 //		System.out.println(response.toString());
 //	}
 
-	private String getJson() {
+	private static String getJson() {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("email", "leilani3@stanford.edu");
 		map.put("github", "https://github.com/lanidelrey/code2040");
