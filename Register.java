@@ -77,7 +77,7 @@ public class Register {
 		BufferedReader rd = new BufferedReader(new InputStreamReader(is));
 		String line = "";
 		ArrayList<String> response = new ArrayList<String>();
-		while (line = rd.readLine() != null) {
+		while ((line = rd.readLine()) != null) {
 			response.add(line);
 		}
 		
