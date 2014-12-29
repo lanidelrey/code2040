@@ -23,6 +23,24 @@ public class Register {
 		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 		
+		con.setRequestMethod("GET");	// optional, since default is "GET" request
+		con.setRequestProperty("User-Agent", USER_AGENT);
+		
+		int responseCode = con.getResponseCode();
+		System.out.println("Sending 'GET' request to URL: " + url);
+		System.out.println("Response code: " + responseCode);
+		
+		BufferedReader rd = new BufferedReader(new InputStreamReader(con.getInputStream()));
+		String input;
+		StringBuffer response = new StringBuffer();
+		
+		while ((input = rd.readLine()) != null) {
+			response.append(input);
+		}
+		
+		rd.close();
+		
+		System.out.println(response.toString());
 	}
 	
 	private void sendPost() throws IOException {
