@@ -76,11 +76,12 @@ public class Register {
 		InputStream is = connection.getInputStream();
 		BufferedReader rd = new BufferedReader(new InputStreamReader(is));
 		String line = "";
-		ArrayList<String> response = new ArrayList<String>();
 		while ((line = rd.readLine()) != null) {
-			response.add(line);
+			token += line;
 		}
+		rd.close();
 		
+		System.out.println(token);
 	}
 	
 	/**private instance variables**/
