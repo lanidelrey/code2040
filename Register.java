@@ -8,6 +8,10 @@ import java.io.*;
 import java.net.*;
 import java.util.*;
 
+import javax.swing.text.AbstractDocument.Content;
+
+import com.google.gson.GsonBuilder;
+
 
 public class Register {
 	
@@ -44,10 +48,11 @@ public class Register {
 //		System.out.println(response.toString());
 //	}
 
-	private Content getJson() {
+	private String getJson() {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("email", "leilani3@stanford.edu");
 		map.put("github", "https://github.com/lanidelrey/code2040");
+		String json = new GsonBuilder().create().toJson(map, Map.class);
 		return json;
 	}
 	
