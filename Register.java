@@ -6,7 +6,7 @@
 
 import java.io.*;
 import java.net.*;
-import java.lang.*;
+import java.util.*;
 
 
 public class Register {
@@ -14,7 +14,7 @@ public class Register {
 	public static void main(String[] args) throws IOException {
 		Register register = new Register();
 //		register.sendGet();
-		register.sendPost();
+		register.sendPost(getJSON());
 	}
 
 //	private void sendGet() throws IOException {
@@ -43,8 +43,14 @@ public class Register {
 //		
 //		System.out.println(response.toString());
 //	}
-//	
-	private void sendPost() throws IOException {
+
+	private Content getJson() {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("")
+		return json;
+	}
+	
+	private void sendPost(Content content) throws IOException {
 		System.out.println("sending http POST request");
 		
 		String url = "http://challenge.code2040.org/api/register";
@@ -55,7 +61,7 @@ public class Register {
 	}
 	
 	/**private instance variables**/
-	private String token;
+	private String token = "";
 	private static final String USER_AGENT = "Mozilla/5.0";
 
 }
