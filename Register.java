@@ -49,6 +49,8 @@ public class Register {
 		String url = "http://challenge.code2040.org/api/register";
 		URL obj = new URL(url);
 		HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
+		connection.setRequestMethod("POST");
+		connection.setRequestProperty("")
 	}
 	
 	/**private instance variables**/
