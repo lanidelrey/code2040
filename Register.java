@@ -10,7 +10,7 @@ import java.lang.*;
 
 public class Register {
 	
-	public void main(String[] args) {
+	public static void main(String[] args) {
 		Register register = new Register();
 		register.sendGet();
 		register.sendPost();
