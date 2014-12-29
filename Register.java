@@ -9,13 +9,13 @@ import java.net.*;
 
 public class Register {
 	
-	public void main(String[] args) throws Exception {
+	public void main(String[] args) {
 		Register register = new Register();
 		register.sendGet();
 		register.sendPost();
 	}
 
-	private void sendGet() throws Exception{
+	private void sendGet() {
 		System.out.println("sending http GET request");
 		
 		String url = "http://challenge.code2040.org/api/register";
