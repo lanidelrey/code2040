@@ -6,6 +6,7 @@
 
 import java.io.*;
 import java.net.*;
+import java.lang.*;
 
 public class Register {
 	
