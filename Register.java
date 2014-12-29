@@ -63,7 +63,23 @@ public class Register {
 		HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
 		connection.setRequestMethod("POST");
 		connection.setRequestProperty("Content-Type", "application/json");
+		connection.setDoInput(true);
+		connection.setDoOutput(true);
 		
+		//send request
+		DataOutputStream ds = new DataOutputStream(connection.getOutputStream());
+		ds.writeBytes(json);
+		ds.flush();
+		ds.close();
+		
+		//get response
+		InputStream is = connection.getInputStream();
+		BufferedReader rd = new BufferedReader(new InputStreamReader(is));
+		String line = "";
+		ArrayList<String> response = new ArrayList<String>();
+		while (line = rd.readLine() != null) {
+			response.add(line);
+		}
 		
 	}
 	
