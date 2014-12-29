@@ -8,6 +8,7 @@ import java.io.*;
 import java.net.*;
 import java.lang.*;
 
+
 public class Register {
 	
 	public static void main(String[] args) throws IOException {
@@ -50,7 +51,7 @@ public class Register {
 		URL obj = new URL(url);
 		HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
 		connection.setRequestMethod("POST");
-		connection.setRequestProperty("")
+		connection.setRequestProperty("Content-Type", "application/json" );
 	}
 	
 	/**private instance variables**/
