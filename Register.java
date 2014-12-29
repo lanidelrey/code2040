@@ -7,9 +7,6 @@
 import java.io.*;
 import java.net.*;
 import java.util.*;
-
-import javax.swing.text.AbstractDocument.Content;
-
 import com.google.gson.GsonBuilder;
 
 
@@ -48,22 +45,26 @@ public class Register {
 //		System.out.println(response.toString());
 //	}
 
-	private static String getJson() {
+	private void getJson() {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("email", "leilani3@stanford.edu");
 		map.put("github", "https://github.com/lanidelrey/code2040");
 		String json = new GsonBuilder().create().toJson(map, Map.class);
-		return json;
+		try {
+			makeRequest("http://challenge.code2040.org/api/register", json);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
-	private void sendPost(String content) throws IOException {
+	private void makeRequest(String url, String json) throws IOException {
 		System.out.println("sending http POST request");
-		
-		String url = "http://challenge.code2040.org/api/register";
 		URL obj = new URL(url);
 		HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
 		connection.setRequestMethod("POST");
 		connection.setRequestProperty("Content-Type", "application/json");
+		
+		
 	}
 	
 	/**private instance variables**/
