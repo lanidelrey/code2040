@@ -10,14 +10,20 @@ import java.net.*;
 public class Register {
 	
 	public void run() {
-		registerStrings();
+		sendGet();
+		sendPost();
 	}
 
-	private void registerStrings() {
+	private void sendGet() {
+		System.out.println("sending http GET request");
 		
 	}
 	
+	private void sendPost() {
+		System.out.println("sending http POST request");
+	}
+	
 	/**private instance variables**/
-	private String code;
+	private String token;
 
 }
