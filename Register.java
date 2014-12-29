@@ -46,7 +46,7 @@ public class Register {
 
 	private Content getJson() {
 		Map<String, String> map = new HashMap<String, String>();
-		map.put("")
+		map.put("");
 		return json;
 	}
 	
