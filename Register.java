@@ -51,9 +51,8 @@ public class Register {
 	}
 	
 	private String getJson(String url, Map map) throws IOException {
-		String strUrl = "http://challenge.code2040.org/api/getstring";
 		String json = new GsonBuilder().create().toJson(map, Map.class);
-		String response = makeRequest(strUrl, json);
+		String response = makeRequest(url, json);
 		return response;
 	}
 	
