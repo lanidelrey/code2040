@@ -82,10 +82,8 @@ public class Register {
 		return stripped;
 	}
 	
-	/**private instance variables**/
-	private static Register register = new Register();
-	private static String token = "";
 	
+	/**static methods**/
 	private static Map registrationMap() {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("email", "leilani3@stanford.edu");
@@ -105,4 +103,8 @@ public class Register {
 		map.put("string", string);
 		return map;
 	}
+	
+	/**private instance variables**/
+	private static Register register = new Register();
+	private static String token = "";
 }
