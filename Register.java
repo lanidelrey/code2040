@@ -13,9 +13,12 @@ import com.google.gson.GsonBuilder;
 public class Register {
 	
 	public static void main(String[] args) throws IOException {
-		// registration
+		// Challenge 0: registration
 		Register register = new Register();
 		register.getJson(registrationMap());
+		
+		// Challenge 1: reverse string
+		
 	}
 	
 	private static Map registrationMap() {
