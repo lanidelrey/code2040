@@ -33,7 +33,7 @@ public class Register {
 	
 	private void reverseString() {
 		// Challenge 1: reverse string
-		register.getJson
+		register.getJson(tokenMap());
 		Reverse reverse = new Reverse(input);
 	}
 	
