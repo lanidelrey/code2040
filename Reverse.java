@@ -17,6 +17,9 @@ public class Reverse {
 		target = input;
 	}
 	
+	public String reverseString() {
+		
+	}
 	
 	/**private instance variables**/
 	private String target;
