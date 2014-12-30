@@ -21,26 +21,6 @@ public class Register {
 		register.reverseString();
 	}
 	
-	private static Map registrationMap() {
-		Map<String, String> map = new HashMap<String, String>();
-		map.put("email", "leilani3@stanford.edu");
-		map.put("github", "https://github.com/lanidelrey/code2040");
-		return map;
-	}
-	
-	private static Map tokenMap() {
-		Map<String, String> map = new HashMap<String, String>();
-		map.put("token", token);
-		return map;
-	}
-	
-	private static Map stringMap(String string) {
-		Map<String, String> map = new HashMap<String, String>();
-		map.put("token", token);
-		map.put("string", string);
-		return map;
-	}
-	
 	private void reverseString() throws IOException {
 		String getStrUrl = "http://challenge.code2040.org/api/getstring";
 		String input = register.getJson(getStrUrl, tokenMap());
@@ -105,4 +85,24 @@ public class Register {
 	/**private instance variables**/
 	private static Register register = new Register();
 	private static String token = "";
+	
+	private static Map registrationMap() {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("email", "leilani3@stanford.edu");
+		map.put("github", "https://github.com/lanidelrey/code2040");
+		return map;
+	}
+	
+	private static Map tokenMap() {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("token", token);
+		return map;
+	}
+	
+	private static Map stringMap(String string) {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("token", token);
+		map.put("string", string);
+		return map;
+	}
 }
