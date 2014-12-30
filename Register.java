@@ -86,6 +86,6 @@ public class Register {
 	}
 	
 	/**private instance variables**/
-	private Register register = new Register();
+	private static Register register = new Register();
 	private static String token = "";
 }
