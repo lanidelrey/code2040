@@ -18,7 +18,9 @@ public class Reverse {
 	}
 	
 	public String reverseString() {
-		
+		StringBuffer sb = new StringBuffer(target);
+		String reversed = sb.reverse().toString();
+		return reversed;
 	}
 	
 	/**private instance variables**/
