@@ -22,18 +22,7 @@ public class Register {
 		register.reverseString();
 	}
 	
-	private void reverseString() throws IOException {
-		String getStrUrl = "http://challenge.code2040.org/api/getstring";
-		String input = register.getJson(getStrUrl, tokenMap());
-		
-		Reverse reverse = new Reverse(input);
-		String reversed = reverse.reverseString();
-		
-		String valStrUrl = "http://challenge.code2040.org/api/validatestring";
-		String response = register.getJson(valStrUrl, stringMap(reversed));
-		System.out.println(response);
-	}
-	
+	/**general JSON methods**/
 	private String getJson(String url, Map map) throws IOException {
 		String json = new GsonBuilder().create().toJson(map, Map.class);
 		String response = makeRequest(url, json);
@@ -83,6 +72,18 @@ public class Register {
 		return stripped;
 	}
 	
+	/**Challenge 1**/
+	private void reverseString() throws IOException {
+		String getStrUrl = "http://challenge.code2040.org/api/getstring";
+		String input = register.getJson(getStrUrl, tokenMap());
+		
+		Reverse reverse = new Reverse(input);
+		String reversed = reverse.reverseString();
+		
+		String valStrUrl = "http://challenge.code2040.org/api/validatestring";
+		String response = register.getJson(valStrUrl, stringMap(reversed));
+		System.out.println(response);
+	}
 	
 	/**static methods**/
 	private static Map registrationMap() {
