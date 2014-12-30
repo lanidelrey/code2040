@@ -13,6 +13,7 @@ import com.google.gson.GsonBuilder;
 public class Register {
 	
 	public static void main(String[] args) throws IOException {
+		// registration
 		Register register = new Register();
 		register.getJson();
 	}
