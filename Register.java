@@ -43,7 +43,8 @@ public class Register {
 		String input = register.getJson(tokenMap());
 		Reverse reverse = new Reverse(input);
 		String reversed = reverse.reverseString();
-		register.getJson(stringMap(reversed));
+		String response = register.getJson(stringMap(reversed));
+		System.out.println(response);
 	}
 	
 	private String getJson(Map map) throws IOException {
