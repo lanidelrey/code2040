@@ -91,7 +91,7 @@ public class Register {
 		int end = response.length() - 2;
 		
 		for(int i = index; i < end; i++) {
-			token += i;
+			token += response.charAt(i);
 		}
 		
 		System.out.println(token);
