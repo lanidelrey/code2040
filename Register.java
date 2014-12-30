@@ -18,7 +18,7 @@ public class Register {
 		strip(response);
 		
 		// Challenge 1: reverse string
-		reverseString();
+		register.reverseString();
 	}
 	
 	private static Map registrationMap() {
