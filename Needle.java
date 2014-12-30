@@ -17,6 +17,6 @@ public class Needle {
 	}
 	
 	/**private instance variables**/
-	private String target;
+	private String haystack;
 	
 }
