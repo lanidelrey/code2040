@@ -14,6 +14,7 @@ public class Register {
 	
 	public static void main(String[] args) throws IOException {
 		// Challenge 0: registration, get token
+		String regUrl = ""
 		String response = register.getJson(registrationMap());
 		strip(response);
 		
@@ -49,7 +50,7 @@ public class Register {
 		System.out.println(response);
 	}
 	
-	private String getJson(Map map) throws IOException {
+	private String getJson(String url, Map map) throws IOException {
 		String json = new GsonBuilder().create().toJson(map, Map.class);
 		String response = makeRequest("http://challenge.code2040.org/api/register", json);
 		return response;
