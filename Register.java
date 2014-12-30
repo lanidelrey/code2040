@@ -90,7 +90,8 @@ public class Register {
 		String hayUrl = "http://challenge.code2040.org/api/haystack";
 		String haystack = register.getJson(hayUrl, tokenMap());
 		
-		
+		Needle needle = new Needle(haystack);
+		String index = needle.getNeedleIndex();
 	}
 	
 	/**static methods**/
