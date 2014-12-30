@@ -43,10 +43,14 @@ public class Register {
 	}
 	
 	private void reverseString() throws IOException {
-		String input = register.getJson(tokenMap());
+		String getStrUrl = "http://challenge.code2040.org/api/getstring";
+		String input = register.getJson(getStrUrl, tokenMap());
+		
 		Reverse reverse = new Reverse(input);
 		String reversed = reverse.reverseString();
-		String response = register.getJson(stringMap(reversed));
+		
+		String valStrUrl = "http://challenge.code2040.org/api/validatestring";
+		String response = register.getJson(valStrUrl, stringMap(reversed));
 		System.out.println(response);
 	}
 	
