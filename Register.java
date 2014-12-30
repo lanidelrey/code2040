@@ -16,6 +16,9 @@ public class Register {
 		// Challenge 0: registration, get token
 		String response = register.getJson(registrationMap());
 		strip(response);
+		
+		// Challenge 1: reverse string
+		reverseString();
 	}
 	
 	private static Map registrationMap() {
@@ -39,7 +42,6 @@ public class Register {
 	}
 	
 	private void reverseString() throws IOException {
-		// Challenge 1: reverse string
 		String input = register.getJson(tokenMap());
 		Reverse reverse = new Reverse(input);
 		String reversed = reverse.reverseString();
