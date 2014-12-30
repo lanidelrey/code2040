@@ -32,11 +32,11 @@ public class Register {
 	
 	private void reverseString() {
 		// Challenge 1: reverse string
-		register.getJson(tokenMap());
+		String input = register.getJson(tokenMap());
 		Reverse reverse = new Reverse(input);
 	}
 	
-	private void getJson(Map map) {
+	private String getJson(Map map) {
 		String json = new GsonBuilder().create().toJson(map, Map.class);
 		try {
 			makeRequest("http://challenge.code2040.org/api/register", json);
@@ -45,7 +45,7 @@ public class Register {
 		}
 	}
 	
-	private void makeRequest(String url, String json) throws IOException {
+	private String makeRequest(String url, String json) throws IOException {
 		System.out.println("sending http POST request");
 		URL obj = new URL(url);
 		HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
@@ -72,6 +72,8 @@ public class Register {
 		
 		System.out.println(response);
 		strip(response);
+		
+		return response;
 	}
 	
 	private void strip(String response) {
