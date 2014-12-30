@@ -2,6 +2,7 @@
  * File: Register.java
  * -------------------------------
  * This class sends registration info to Code2040's website.
+ * It also completes subsequent challenges by calling instances of other classes.
  */
 
 import java.io.*;
