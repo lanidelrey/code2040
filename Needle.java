@@ -11,7 +11,7 @@ public class Needle {
 	}
 	
 	public int getNeedleIndex() {
-		StringBuffer sb = new StringBuffer(target);
+		StringBuffer sb = new StringBuffer(haystack);
 		String reversed = sb.reverse().toString();
 		return reversed;
 	}
