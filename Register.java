@@ -89,15 +89,17 @@ public class Register {
 		return response;
 	}
 	
-	private static void strip(String response) {
+	private String strip(String response) {
 		int index = response.indexOf(":\"") + 2;
 		int end = response.length() - 2;
+		String stripped = "";
 		
 		for(int i = index; i < end; i++) {
-			token += response.charAt(i);
+			stripped += response.charAt(i);
 		}
 		
-		System.out.println(token);
+		System.out.println(stripped);
+		return stripped;
 	}
 	
 	/**private instance variables**/
