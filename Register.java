@@ -14,36 +14,8 @@ public class Register {
 	
 	public static void main(String[] args) throws IOException {
 		Register register = new Register();
-//		register.sendGet();
 		register.getJson();
 	}
-
-//	private void sendGet() throws IOException {
-//		System.out.println("sending http GET request");
-//		
-//		String url = "http://challenge.code2040.org/api/register";
-//		URL obj = new URL(url);
-//		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-//		
-//		con.setRequestMethod("GET");	// optional, since default is "GET" request
-//		con.setRequestProperty("User-Agent", USER_AGENT);
-//		
-//		int responseCode = con.getResponseCode();
-//		System.out.println("Sending 'GET' request to URL: " + url);
-//		System.out.println("Response code: " + responseCode);
-//		
-//		BufferedReader rd = new BufferedReader(new InputStreamReader(con.getInputStream()));
-//		String input;
-//		StringBuffer response = new StringBuffer();
-//		
-//		while ((input = rd.readLine()) != null) {
-//			response.append(input);
-//		}
-//		
-//		rd.close();
-//		
-//		System.out.println(response.toString());
-//	}
 
 	private void getJson() {
 		Map<String, String> map = new HashMap<String, String>();
