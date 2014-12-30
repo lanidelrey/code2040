@@ -12,12 +12,12 @@ import com.google.gson.GsonBuilder;
 
 public class Reverse {
 	
-	public Reverse {
-		
+	public Reverse(String input) {
+		target = input;
 	}
 	
 	
 	/**private instance variables**/
-	private String token = "";
+	private String target;
 	
 }
