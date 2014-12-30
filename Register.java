@@ -14,11 +14,12 @@ public class Register {
 	
 	public static void main(String[] args) throws IOException {
 		// Challenge 0: registration, get token
-		String regUrl = ""
+		String regUrl = "http://challenge.code2040.org/api/register";
 		String response = register.getJson(registrationMap());
 		strip(response);
 		
 		// Challenge 1: reverse string
+		String strUrl = "http://challenge.code2040.org/api/getstring";
 		register.reverseString();
 	}
 	
@@ -52,7 +53,7 @@ public class Register {
 	
 	private String getJson(String url, Map map) throws IOException {
 		String json = new GsonBuilder().create().toJson(map, Map.class);
-		String response = makeRequest("http://challenge.code2040.org/api/register", json);
+		String response = makeRequest(, json);
 		return response;
 	}
 	
