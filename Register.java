@@ -16,7 +16,6 @@ public class Register {
 		// Challenge 0: registration, get token
 		String regUrl = "http://challenge.code2040.org/api/register";
 		token = register.getJson(regUrl, registrationMap());
-		strip(response);
 		
 		// Challenge 1: reverse string
 		register.reverseString();
