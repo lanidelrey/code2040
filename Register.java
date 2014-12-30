@@ -15,13 +15,17 @@ public class Register {
 	public static void main(String[] args) throws IOException {
 		// registration
 		Register register = new Register();
-		register.getJson();
+		register.getJson(registrationMap());
 	}
-
-	private void getJson() {
+	
+	private static Map registrationMap() {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("email", "leilani3@stanford.edu");
 		map.put("github", "https://github.com/lanidelrey/code2040");
+		return map;
+	}
+	
+	private void getJson(Map map) {
 		String json = new GsonBuilder().create().toJson(map, Map.class);
 		try {
 			makeRequest("http://challenge.code2040.org/api/register", json);
