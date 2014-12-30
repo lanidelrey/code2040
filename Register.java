@@ -19,7 +19,6 @@ public class Register {
 		strip(response);
 		
 		// Challenge 1: reverse string
-		String strUrl = "http://challenge.code2040.org/api/getstring";
 		register.reverseString();
 	}
 	
@@ -52,6 +51,7 @@ public class Register {
 	}
 	
 	private String getJson(String url, Map map) throws IOException {
+		String strUrl = "http://challenge.code2040.org/api/getstring";
 		String json = new GsonBuilder().create().toJson(map, Map.class);
 		String response = makeRequest(, json);
 		return response;
