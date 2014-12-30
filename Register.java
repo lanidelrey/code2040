@@ -87,7 +87,7 @@ public class Register {
 	}
 	
 	private void strip(String response) {
-		int index = response.indexOf(": ") + 4;
+		int index = response.indexOf(":\"") + 4;
 		int end = response.length() - 2;
 		
 		for(int i = index; i < end; i++) {
