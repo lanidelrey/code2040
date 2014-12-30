@@ -71,6 +71,4 @@ public class Register {
 	
 	/**private instance variables**/
 	private String token = "";
-	private static final String USER_AGENT = "Mozilla/5.0";
-
 }
