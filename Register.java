@@ -82,6 +82,11 @@ public class Register {
 		rd.close();
 		
 		System.out.println(token);
+		strip(token);
+	}
+	
+	private void strip(String token) {
+		int index = token.indexOf(": ");
 	}
 	
 	/**private instance variables**/
