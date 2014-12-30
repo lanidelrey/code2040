@@ -85,7 +85,7 @@ public class Register {
 		rd.close();
 		
 		System.out.println(response);
-		
+		strip(response);
 		return response;
 	}
 	
