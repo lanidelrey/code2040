@@ -14,7 +14,6 @@ public class Register {
 	
 	public static void main(String[] args) throws IOException {
 		// Challenge 0: registration
-		Register register = new Register();
 		register.getJson(registrationMap());
 	}
 	
@@ -87,5 +86,6 @@ public class Register {
 	}
 	
 	/**private instance variables**/
+	private Register register = new Register();
 	private static String token = "";
 }
