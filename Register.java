@@ -15,7 +15,7 @@ public class Register {
 	public static void main(String[] args) throws IOException {
 		// Challenge 0: registration, get token
 		String regUrl = "http://challenge.code2040.org/api/register";
-		String response = register.getJson(registrationMap());
+		String response = register.getJson(regUrl, registrationMap());
 		strip(response);
 		
 		// Challenge 1: reverse string
