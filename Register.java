@@ -88,7 +88,9 @@ public class Register {
 	/**Challenge 2**/
 	private void findNeedle() throws IOException {
 		String hayUrl = "http://challenge.code2040.org/api/haystack";
-		String input = register.getJson(hayUrl, tokenMap());
+		String haystack = register.getJson(hayUrl, tokenMap());
+		
+		
 	}
 	
 	/**static methods**/
