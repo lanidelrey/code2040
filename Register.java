@@ -76,17 +76,25 @@ public class Register {
 		InputStream is = connection.getInputStream();
 		BufferedReader rd = new BufferedReader(new InputStreamReader(is));
 		String line = "";
+		String response = "";
 		while ((line = rd.readLine()) != null) {
-			token += line;
+			response += line;
 		}
 		rd.close();
 		
-		System.out.println(token);
-		strip(token);
+		System.out.println(response);
+		strip(response);
 	}
 	
-	private void strip(String token) {
-		int index = token.indexOf(": ");
+	private void strip(String response) {
+		int index = response.indexOf(": ") + 3;
+		int end = response.length() - 2;
+		
+		for(int i = index; i < end; i++) {
+			token += i;
+		}
+		
+		System.out.println(token);
 	}
 	
 	/**private instance variables**/
