@@ -91,7 +91,7 @@ public class Register {
 		String haystack = register.getJson(hayUrl, tokenMap());
 		
 		Needle needle = new Needle(haystack);
-		String index = needle.getNeedleIndex();
+		int index = needle.getNeedleIndex();
 	}
 	
 	/**static methods**/
