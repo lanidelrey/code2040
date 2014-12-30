@@ -6,7 +6,7 @@
 
 public class Needle {
 	
-	public Reverse(String input) {
+	public Needle(String input) {
 		target = input;
 	}
 	
