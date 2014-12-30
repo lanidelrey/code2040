@@ -12,8 +12,8 @@ public class Needle {
 	
 	public int getNeedleIndex() {
 		StringBuffer sb = new StringBuffer(haystack);
-		String reversed = sb.reverse().toString();
-		return reversed;
+		//make into an array, find index
+		return index;
 	}
 	
 	/**private instance variables**/
