@@ -85,6 +85,12 @@ public class Register {
 		System.out.println(response);
 	}
 	
+	/**Challenge 2**/
+	private void findNeedle() throws IOException {
+		String hayUrl = "http://challenge.code2040.org/api/haystack";
+		String input = register.getJson(hayUrl, tokenMap());
+	}
+	
 	/**static methods**/
 	private static Map registrationMap() {
 		Map<String, String> map = new HashMap<String, String>();
