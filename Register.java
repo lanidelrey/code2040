@@ -16,9 +16,6 @@ public class Register {
 		// Challenge 0: registration
 		Register register = new Register();
 		register.getJson(registrationMap());
-		
-		// Challenge 1: reverse string
-		
 	}
 	
 	private static Map registrationMap() {
@@ -26,6 +23,18 @@ public class Register {
 		map.put("email", "leilani3@stanford.edu");
 		map.put("github", "https://github.com/lanidelrey/code2040");
 		return map;
+	}
+	
+	private static Map tokenMap() {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("token", token);
+		return map;
+	}
+	
+	private void reverseString() {
+		// Challenge 1: reverse string
+		register.getJson
+		Reverse reverse = new Reverse(input);
 	}
 	
 	private void getJson(Map map) {
@@ -78,5 +87,5 @@ public class Register {
 	}
 	
 	/**private instance variables**/
-	private String token = "";
+	private static String token = "";
 }
