@@ -13,7 +13,7 @@ public class Needle {
 	public int getNeedleIndex() {
 		StringBuffer sb = new StringBuffer(haystack);
 		//make into an array, find index
-		return index;
+		return 0;
 	}
 	
 	/**private instance variables**/
