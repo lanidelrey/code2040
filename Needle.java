@@ -7,7 +7,7 @@
 public class Needle {
 	
 	public Needle(String input) {
-		target = input;
+		haystack = input;
 	}
 	
 	public String reverseString() {
