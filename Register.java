@@ -13,8 +13,9 @@ import com.google.gson.GsonBuilder;
 public class Register {
 	
 	public static void main(String[] args) throws IOException {
-		// Challenge 0: registration
-		register.getJson(registrationMap());
+		// Challenge 0: registration, get token
+		String response = register.getJson(registrationMap());
+		strip(response);
 	}
 	
 	private static Map registrationMap() {
@@ -30,11 +31,19 @@ public class Register {
 		return map;
 	}
 	
+	private static Map stringMap(String string) {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("token", token);
+		map.put("string", string);
+		return map;
+	}
+	
 	private void reverseString() throws IOException {
 		// Challenge 1: reverse string
 		String input = register.getJson(tokenMap());
 		Reverse reverse = new Reverse(input);
-		reverse.reverseString();
+		String reversed = reverse.reverseString();
+		register.getJson(stringMap(reversed));
 	}
 	
 	private String getJson(Map map) throws IOException {
@@ -69,12 +78,11 @@ public class Register {
 		rd.close();
 		
 		System.out.println(response);
-		strip(response);
 		
 		return response;
 	}
 	
-	private void strip(String response) {
+	private static void strip(String response) {
 		int index = response.indexOf(":\"") + 2;
 		int end = response.length() - 2;
 		
