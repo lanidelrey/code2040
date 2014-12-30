@@ -30,19 +30,16 @@ public class Register {
 		return map;
 	}
 	
-	private void reverseString() {
+	private void reverseString() throws IOException {
 		// Challenge 1: reverse string
 		String input = register.getJson(tokenMap());
 		Reverse reverse = new Reverse(input);
 	}
 	
-	private String getJson(Map map) {
+	private String getJson(Map map) throws IOException {
 		String json = new GsonBuilder().create().toJson(map, Map.class);
-		try {
-			makeRequest("http://challenge.code2040.org/api/register", json);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		String response = makeRequest("http://challenge.code2040.org/api/register", json);
+		return response;
 	}
 	
 	private String makeRequest(String url, String json) throws IOException {
