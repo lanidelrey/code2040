@@ -10,7 +10,7 @@ public class Needle {
 		haystack = input;
 	}
 	
-	public String reverseString() {
+	public int getNeedleIndex() {
 		StringBuffer sb = new StringBuffer(target);
 		String reversed = sb.reverse().toString();
 		return reversed;
