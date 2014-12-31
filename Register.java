@@ -120,7 +120,7 @@ public class Register {
 	}
 	
 	private static Map needleMap() {
-		Map<String, String> map = new HashMap<String, String>();
+		Map<String, Needle> map = new HashMap<String, Needle>();
 		map.put("token", token);
 		map.put("needle", " + index + ");
 		return map;
