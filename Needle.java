@@ -16,7 +16,7 @@ public class Needle {
 	}
 	
 	private int getNeedleIndex(String input) {
-		return pullArray(input).indexOf(needle);
+		return pullArray(input).indexOf(pullNeedle(input));
 	}
 	
 	private ArrayList<String> pullArray(String input) {
