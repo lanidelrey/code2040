@@ -125,6 +125,7 @@ public class Register {
 			Needle needle = new Needle(token, register.getHaystack());
 			ObjectMapper mapper = new ObjectMapper();
 			String json = mapper.writeValueAsString(needle);
+			System.out.print(json);
 			return json;
 		} catch (IOException e) {
 			e.printStackTrace();
