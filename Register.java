@@ -129,7 +129,6 @@ public class Register {
 			String json = mapper.writeValueAsString(needle);
 			return json;
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return "IOException error";
 		}
