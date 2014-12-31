@@ -13,6 +13,7 @@ public class Needle {
 		needle = pullString(input);
 		
 		System.out.println("haystack arrayList: " + haystack);
+		System.out.println("needle: " + needle);
 	}
 	
 	public int getNeedleIndex() {
