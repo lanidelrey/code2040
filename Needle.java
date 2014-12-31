@@ -26,7 +26,7 @@ public class Needle {
 		int index2 = input.indexOf("]");
 		String hayString = "";
 		
-		for (int i = index1; i < index2; i++) {
+		for (int i = index1 + 1; i < index2; i++) {
 			hayString += input.charAt(i);
 		}
 		
