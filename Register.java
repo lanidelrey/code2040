@@ -88,13 +88,15 @@ public class Register {
 	}
 	
 	/**Challenge 2**/
-	private void findNeedle() throws IOException {
+	private String getHaystack() throws IOException {
 		String hayUrl = "http://challenge.code2040.org/api/haystack";
 		String haystack = register.getJson(hayUrl, tokenMap());
-		
+		return haystack;
+	}
+	
+	private sendIndex() throws IOException {
 		String valStrUrl = "http://challenge.code2040.org/api/validateneedle";
-		Needle needle = new Needle(token, haystack);
-		//int index = needle.getNeedleIndex();
+		Needle needle = new Needle(token, register.getHaystack());
 		register.getJson(valStrUrl, needleMap(-1));
 	}
 	
@@ -121,7 +123,7 @@ public class Register {
 	
 	private static Map needleMap() {
 		Map<String, Needle> map = new HashMap<String, Needle>();
-		map.put("token", token);
+		map.put("token", );
 		map.put("needle", " + index + ");
 		return map;
 	}
