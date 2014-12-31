@@ -23,6 +23,7 @@ public class Needle {
 		int index1 = input.indexOf("[");
 		int index2 = input.indexOf("]");
 		String hayString = "";
+		ArrayList<String> haystack = new ArrayList<String>();
 		
 		for (int i = index1 + 1; i < index2; i++) {
 			hayString += input.charAt(i);
@@ -50,7 +51,6 @@ public class Needle {
 	}
 	
 	/**private instance variables**/
-	private ArrayList<String> haystack = new ArrayList<String>();
 	private String needle = "";
 	private int index = -1;
 }
