@@ -22,7 +22,7 @@ public class Register {
 		register.reverseString();
 		
 		// Challenge 2: find needle
-		register.findNeedle();
+		register.sendIndex();
 	}
 	
 	/**general JSON methods**/
