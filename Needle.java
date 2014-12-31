@@ -9,7 +9,7 @@ import java.util.*;
 public class Needle {
 	
 	public Needle(String token, String input) {
-		token = token;
+		this.token = token;
 		index = getNeedleIndex(input);
 	}
 	
