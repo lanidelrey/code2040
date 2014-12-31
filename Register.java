@@ -113,6 +113,10 @@ public class Register {
 		Prefix prefixData = new Prefix(register.getPrefixArray());
 	}
 	
+	private void deserializePrefix() throws IOException {
+		
+	}
+	
 	/**static methods**/
 	private static Map registrationMap() {
 		Map<String, String> map = new HashMap<String, String>();
