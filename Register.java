@@ -105,8 +105,7 @@ public class Register {
 	/**Challenge 3**/
 	private String getPrefixArray() throws IOException {
 		String prefUrl = "http://challenge.code2040.org/api/prefix";
-		String prefixArray = register.getJson(prefUrl, tokenMap());
-		return prefixArray;
+		return register.getJson(prefUrl, tokenMap());
 	}
 	
 	private void deserializePrefix() throws IOException {
