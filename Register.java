@@ -140,7 +140,6 @@ public class Register {
 		try {
 			Needle needle = new Needle(token, register.getHaystack());
 			ObjectMapper mapper = new ObjectMapper();
-			@JsonIgnoreProperties(ignoreUnknown = true);
 			String json = mapper.writeValueAsString(needle);
 			System.out.print("json: " + json);
 			return json;
@@ -151,6 +150,7 @@ public class Register {
 	}
 	
 	/**private instance variables**/
+	@JsonIgnoreProperties(ignoreUnknown = true)
 	private static Register register = new Register();
 	private static String token = "";
 }
