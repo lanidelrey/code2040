@@ -86,7 +86,7 @@ public class Register {
 		String reversed = reverse.reverseString();
 		
 		String valStrUrl = "http://challenge.code2040.org/api/validatestring";
-		String response = register.getJson(valStrUrl, stringMap(reversed));
+		register.getJson(valStrUrl, stringMap(reversed));
 	}
 	
 	/**Challenge 2**/
