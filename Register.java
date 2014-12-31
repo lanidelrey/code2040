@@ -92,6 +92,7 @@ public class Register {
 		String hayUrl = "http://challenge.code2040.org/api/haystack";
 		String haystack = register.getJson(hayUrl, tokenMap());
 		
+		String valStrUrl = "http://challenge.code2040.org/api/validateneedle";
 		Needle needle = new Needle(haystack);
 		int index = needle.getNeedleIndex();
 	}
