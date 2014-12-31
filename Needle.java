@@ -9,15 +9,14 @@ import java.util.*;
 public class Needle {
 	
 	public Needle(String input) {
-		haystack = pullArray(input);
-		needle = pullString(input);
+		index = getNeedleIndex(input);
 		
 		System.out.println("haystack arrayList: " + haystack);
 		System.out.println("needle: " + needle);
 	}
 	
-	public int getNeedleIndex() {
-		return haystack.indexOf(needle);
+	private int getNeedleIndex(String input) {
+		return pullArray(input).indexOf(needle);
 	}
 	
 	private ArrayList<String> pullArray(String input) {
@@ -37,7 +36,7 @@ public class Needle {
 		return haystack;
 	}
 	
-	private String pullString(String input) {
+	private String pullNeedle(String input) {
 		String key = "\"needle\":\"";
 		int keyLength = key.length();
 		int index1 = input.indexOf("\"needle\":\"");
@@ -53,5 +52,5 @@ public class Needle {
 	/**private instance variables**/
 	private ArrayList<String> haystack = new ArrayList<String>();
 	private String needle = "";
-	private int index = 0;
+	private int index = -1;
 }
