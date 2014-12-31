@@ -60,6 +60,6 @@ public class Needle {
 	}
 	
 	/**private instance variables**/
-	private int index = -1;
-	private String needle = "";
+	private int needle = -1;
+	private String token = "";
 }
