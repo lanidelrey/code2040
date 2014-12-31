@@ -27,7 +27,7 @@ public class Needle {
 		String hayString = "";
 		
 		for (int i = index1; i < index2; i++) {
-			hayString += i;
+			hayString += input.charAt(i);
 		}
 		
 		StringTokenizer tokenizer = new StringTokenizer(hayString, " \t\n\r\f,.:;?![]'");
