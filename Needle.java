@@ -8,7 +8,8 @@ import java.util.*;
 
 public class Needle {
 	
-	public Needle(String input) {
+	public Needle(String token, String input) {
+		token = token;
 		index = getNeedleIndex(input);
 	}
 	
@@ -52,4 +53,5 @@ public class Needle {
 	
 	/**private instance variables**/
 	private int index = -1;
+	private String token = "";
 }
