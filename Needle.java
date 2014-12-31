@@ -4,6 +4,8 @@
  * This class finds the needle in the haystack.
  */
 
+import java.util.*;
+
 public class Needle {
 	
 	public Needle(String input) {
@@ -17,7 +19,8 @@ public class Needle {
 		return 0;
 	}
 	
-	private String pullArray(String input) {
+	private ArrayList<String> pullArray(String input) {
+		int index = input.indexOf("\"haystack\":");
 		return "";
 	}
 	
@@ -26,7 +29,7 @@ public class Needle {
 	}
 	
 	/**private instance variables**/
-	private String haystack;
+	private ArrayList<String> haystack;
 	private String needle;
 	
 }
