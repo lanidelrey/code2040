@@ -122,9 +122,11 @@ public class Register {
 	}
 	
 	private static Map needleMap() {
-		Map<String, Needle> map = new HashMap<String, Needle>();
-		map.put("token", );
-		map.put("needle", " + index + ");
+		
+//		Needle needle = new Needle(token, register.getHaystack());
+//		Map<String, Needle> map = new HashMap<String, Needle>();
+//		map.put("token", needle.getToken());
+//		map.put("needle", needle.getIndex());
 		return map;
 	}
 	
