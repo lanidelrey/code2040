@@ -6,11 +6,16 @@
  */
 
 import java.io.*;
+import java.lang.*;
 import java.net.*;
 import java.util.*;
+
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.annotation.*;
+
+import org.pf.util.*;
 
 public class Register {
 	
@@ -112,6 +117,14 @@ public class Register {
 //		PrefixResult prefixData = new ObjectMapper().readValue(register.getPrefixArray(), PrefixResult.class);
 //		System.out.println("prefix: " + prefixData.returnPrefix());
 //		System.out.println("array: " + prefixData.returnArray());
+	}
+	
+	private Object deserializeJson(String json) throws IOException {
+		Gson gson = new GsonBuilder().create();
+		Map<String, Object> result = gson.fromJson(json, Map.class);
+		String innerJson = gson.toJson(result.get("result"));
+		MapWrapper wrapper = );
+		return gson.fromJson(innerJson, MapWrapper.class
 	}
 	
 	/**static methods**/
