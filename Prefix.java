@@ -19,7 +19,7 @@ public class Prefix {
 		int firstIndex = input.indexOf(key) + keyLength;
 		int lastIndex = input.indexOf("\"}}");
 		
-		for (int i = firstIndex; i < lastIndex); i++) {
+		for (int i = firstIndex; i < lastIndex; i++) {
 			prefix += input.charAt(i);
 		}
 		
