@@ -17,8 +17,7 @@ public class Needle {
 	}
 	
 	public int getNeedleIndex() {
-		
-		return 0;
+		return haystack.indexOf(needle);
 	}
 	
 	private ArrayList<String> pullArray(String input) {
