@@ -39,6 +39,10 @@ public class Needle {
 	}
 	
 	private String pullString(String input) {
+		String key = "\"needle\":\"";
+		int keyLength = key.length();
+		int index = input.indexOf("\"needle\":\"");
+		
 		return "";
 	}
 	
