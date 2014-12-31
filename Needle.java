@@ -30,7 +30,7 @@ public class Needle {
 			hayString += input.charAt(i);
 		}
 		
-		StringTokenizer tokenizer = new StringTokenizer(hayString, " \t\n\r\f,.:;?![]'");
+		StringTokenizer tokenizer = new StringTokenizer(hayString, " ,\"");
 		while (tokenizer.hasMoreTokens()) {
 			haystack.add(tokenizer.nextToken());
 		}
