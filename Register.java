@@ -87,7 +87,6 @@ public class Register {
 		
 		String valStrUrl = "http://challenge.code2040.org/api/validatestring";
 		String response = register.getJson(valStrUrl, stringMap(reversed));
-		System.out.println(response);
 	}
 	
 	/**Challenge 2**/
@@ -106,7 +105,6 @@ public class Register {
 	private String getPrefixArray() throws IOException {
 		String prefUrl = "http://challenge.code2040.org/api/prefix";
 		String prefixArray = register.getJson(prefUrl, tokenMap());
-		System.out.print(prefixArray);
 		return prefixArray;
 	}
 	
