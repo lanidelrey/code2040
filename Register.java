@@ -114,12 +114,17 @@ public class Register {
 	}
 	
 	private void deserializePrefix() throws IOException {
+		MapWrapper wrapper = register.deserializeJson(register.getPrefixArray());
+		String[] array = (String[]) wrapper.get("array");
+		String prefix = (String) wrapper.get("prefix");
+		System.out.println("array: " + array);
+		System.out.println("prefix: " + prefix);
 //		PrefixResult prefixData = new ObjectMapper().readValue(register.getPrefixArray(), PrefixResult.class);
 //		System.out.println("prefix: " + prefixData.returnPrefix());
 //		System.out.println("array: " + prefixData.returnArray());
 	}
 	
-	private Object deserializeJson(String json) throws IOException {
+	private MapWrapper deserializeJson(String json) throws IOException {
 		Gson gson = new GsonBuilder().create();
 		Map<String, Object> result = gson.fromJson(json, Map.class);
 		String innerJson = gson.toJson(result.get("result"));
