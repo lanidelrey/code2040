@@ -125,14 +125,14 @@ public class Register {
 	private static String needleJson() {
 		try {
 			Needle needle = new Needle(token, register.getHaystack());
+			ObjectMapper mapper = new ObjectMapper();
+			String json = mapper.writeValueAsString(needle);
+			return json;
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return "IOException error";
 		}
-//		Map<String, Needle> map = new HashMap<String, Needle>();
-//		map.put("token", needle.getToken());
-//		map.put("needle", needle.getIndex());
-		return "";
 	}
 	
 	/**private instance variables**/
