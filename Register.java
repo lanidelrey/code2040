@@ -10,6 +10,7 @@ import java.net.*;
 import java.util.*;
 import com.google.gson.GsonBuilder;
 import com.fasterxml.jackson.databind.*;
+import com.fasterxml.jackson.annotation.*;
 
 public class Register {
 	
@@ -139,6 +140,7 @@ public class Register {
 		try {
 			Needle needle = new Needle(token, register.getHaystack());
 			ObjectMapper mapper = new ObjectMapper();
+			@JsonIgnoreProperties(ignoreUnknown = true);
 			String json = mapper.writeValueAsString(needle);
 			System.out.print("json: " + json);
 			return json;
