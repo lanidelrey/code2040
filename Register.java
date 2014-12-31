@@ -109,14 +109,10 @@ public class Register {
 		return prefixArray;
 	}
 	
-	private void prefixData() throws IOException {
-		Prefix prefixData1 = new Prefix(register.getPrefixArray());
-	}
-	
 	private void deserializePrefix() throws IOException {
-		PrefixResult prefixData = new ObjectMapper().readValue(register.getPrefixArray(), PrefixResult.class);
-		System.out.println("prefix: " + prefixData.returnPrefix());
-		System.out.println("array: " + prefixData.returnArray());
+//		PrefixResult prefixData = new ObjectMapper().readValue(register.getPrefixArray(), PrefixResult.class);
+//		System.out.println("prefix: " + prefixData.returnPrefix());
+//		System.out.println("array: " + prefixData.returnArray());
 	}
 	
 	/**static methods**/
