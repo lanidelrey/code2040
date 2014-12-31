@@ -20,7 +20,19 @@ public class Needle {
 	}
 	
 	private ArrayList<String> pullArray(String input) {
-		int index = input.indexOf("\"haystack\":");
+		int index1 = input.indexOf("[");
+		int index2 = input.indexOf("]");
+		String hayString = "";
+		
+		for (int i = index1; i < index2; i++) {
+			hayString += i;
+		}
+		
+		StringTokenizer tokenizer = new StringTokenizer(hayString, " \t\n\r\f,.:;?![]'");
+		while (tokenizer.hasMoreTokens()) {
+			haystack.add(tokenizer.nextToken());
+		}
+		
 		return haystack;
 	}
 	
