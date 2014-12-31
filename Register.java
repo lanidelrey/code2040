@@ -109,6 +109,10 @@ public class Register {
 		return prefixArray;
 	}
 	
+	private void prefixData() throws IOException {
+		Prefix prefixData = new Prefix(register.getPrefixArray());
+	}
+	
 	/**static methods**/
 	private static Map registrationMap() {
 		Map<String, String> map = new HashMap<String, String>();
