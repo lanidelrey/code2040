@@ -13,6 +13,14 @@ public class Needle {
 		index = getNeedleIndex(input);
 	}
 	
+	public String getToken() {
+		return token;
+	}
+	
+	public int getIndex() {
+		return index;
+	}
+	
 	private int getNeedleIndex(String input) {
 		return pullArray(input).indexOf(pullNeedle(input));
 	}
