@@ -10,9 +10,6 @@ public class Needle {
 	
 	public Needle(String input) {
 		index = getNeedleIndex(input);
-		
-		System.out.println("haystack arrayList: " + haystack);
-		System.out.println("needle: " + needle);
 	}
 	
 	private int getNeedleIndex(String input) {
@@ -34,6 +31,7 @@ public class Needle {
 			haystack.add(tokenizer.nextToken());
 		}
 		
+		System.out.println("haystack arrayList: " + haystack);
 		return haystack;
 	}
 	
@@ -48,6 +46,10 @@ public class Needle {
 			needle += input.charAt(i);
 		}
 		
+		System.out.println("needle: " + needle);
 		return needle;
 	}
+	
+	/**private instance variables**/
+	private int index = -1;
 }
