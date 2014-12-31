@@ -21,6 +21,7 @@ public class Prefix {
 			prefix += input.charAt(i);
 		}
 		
+		System.out.println("prefix: " + prefix);
 		return prefix;
 	}
 	
