@@ -109,12 +109,6 @@ public class Register {
 		return prefixArray;
 	}
 	
-	private void deserializePrefix() throws IOException {
-		Prefix prefixData = new ObjectMapper().readValue(register.getPrefixArray(), Prefix.class);
-		System.out.println("prefix: " + prefixData.getPrefix());
-		System.out.println("word arrayList: " + prefixData.getWords());
-	}
-	
 	/**static methods**/
 	private static Map registrationMap() {
 		Map<String, String> map = new HashMap<String, String>();
@@ -150,7 +144,6 @@ public class Register {
 	}
 	
 	/**private instance variables**/
-	@JsonIgnoreProperties(ignoreUnknown = true)
 	private static Register register = new Register();
 	private static String token = "";
 }
