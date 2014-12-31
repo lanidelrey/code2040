@@ -17,7 +17,7 @@ public class Prefix {
 		return prefix;
 	}
 	
-	public ArrayList<String> getWords() {
+	public String[] getWords() {
 		return array;
 	}
 	
