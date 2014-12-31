@@ -11,6 +11,8 @@ public class Needle {
 	public Needle(String input) {
 		haystack = pullArray(input);
 		needle = pullString(input);
+		
+		System.out.println("haystack arrayList: " + haystack);
 	}
 	
 	public int getNeedleIndex() {
