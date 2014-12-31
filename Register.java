@@ -99,6 +99,12 @@ public class Register {
 		register.makeRequest(valStrUrl, Register.needleJson());
 	}
 	
+	/**Challenge 3**/
+	private String getPrefixArray() throws IOException {
+		String prefUrl = "http://challenge.code2040.org/api/prefix";
+		return "";
+	}
+	
 	/**static methods**/
 	private static Map registrationMap() {
 		Map<String, String> map = new HashMap<String, String>();
