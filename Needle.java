@@ -7,13 +7,10 @@
 import java.util.*;
 
 public class Needle {
-	public String token;
-	public int index;
-	
-	
+
 	public Needle(String token, String input) {
 		this.token = token;
-		index = getNeedleIndex(input);
+		needle = getNeedleIndex(input);
 	}
 	
 	public String getToken() {
