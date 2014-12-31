@@ -8,16 +8,37 @@ import java.util.*;
 
 public class Prefix {
 
-	public Prefix() {
-		prefix = "";
-		array = new String[6];
+	public Prefix(String input) {
+		prefix = getPrefix(input);
+		array = getWords(input);
 	}
 	
-	public String getPrefix() {
+	public String getPrefix(String input) {
+		
+		
 		return prefix;
 	}
 	
-	public String[] getWords() {
+	public String[] getWords(String input) {
+		int index1 = input.indexOf("[");
+		int index2 = input.indexOf("]");
+		String rawWords = "";
+		ArrayList<String> arrayList = new ArrayList<String>();
+		
+		for(int i = index1 + 1; i < index2; i++) {
+			rawWords += input.charAt(i);
+		}
+		
+		StringTokenizer tokenizer = new StringTokenizer(rawWords, " ,\"");
+		while (tokenizer.hasMoreTokens()) {
+			arrayList.add(tokenizer.nextToken());
+		}
+		
+		array = new String[arrayList.size()];
+		for (int j = 0; j < arrayList.size(); j++) {
+			array[j] = arrayList.get(j);
+		}
+		
 		return array;
 	}
 	
