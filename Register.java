@@ -16,7 +16,7 @@ public class Register {
 	public static void main(String[] args) throws IOException {
 		// Challenge 0: registration, get token
 		String regUrl = "http://challenge.code2040.org/api/register";
-		token = register.getJson(regUrl, registrationMap());
+		token = register.strip(register.getJson(regUrl, registrationMap()));
 		
 		// Challenge 1: reverse string
 		register.reverseString();
@@ -58,7 +58,6 @@ public class Register {
 		rd.close();
 		
 		System.out.println(response);
-		response = strip(response);
 		return response;
 	}
 	
@@ -78,7 +77,7 @@ public class Register {
 	/**Challenge 1**/
 	private void reverseString() throws IOException {
 		String getStrUrl = "http://challenge.code2040.org/api/getstring";
-		String input = register.getJson(getStrUrl, tokenMap());
+		String input = register.strip(register.getJson(getStrUrl, tokenMap()));
 		
 		Reverse reverse = new Reverse(input);
 		String reversed = reverse.reverseString();
