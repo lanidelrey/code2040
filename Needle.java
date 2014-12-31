@@ -33,6 +33,7 @@ public class Needle {
 			haystack.add(tokenizer.nextToken());
 		}
 		
+		System.out.println("haystack arrayList: " + haystack);
 		return haystack;
 	}
 	
