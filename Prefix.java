@@ -10,7 +10,7 @@ public class Prefix {
 
 	public Prefix() {
 		prefix = "";
-		words = new ArrayList<String>();
+		array = new ArrayList<String>();
 	}
 	
 	public String getPrefix() {
@@ -18,10 +18,10 @@ public class Prefix {
 	}
 	
 	public ArrayList<String> getWords() {
-		return words;
+		return array;
 	}
 	
 	/**public instance variables**/
 	public String prefix;
-	public ArrayList<String> words;
+	public ArrayList<String> array;
 }
