@@ -13,6 +13,14 @@ public class Prefix {
 		words = new ArrayList<String>();
 	}
 	
+	public String getPrefix() {
+		return prefix;
+	}
+	
+	public ArrayList<String> getWords() {
+		return words;
+	}
+	
 	/**public instance variables**/
 	public String prefix;
 	public ArrayList<String> words;
