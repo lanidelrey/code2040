@@ -41,13 +41,18 @@ public class Needle {
 	private String pullString(String input) {
 		String key = "\"needle\":\"";
 		int keyLength = key.length();
-		int index = input.indexOf("\"needle\":\"");
+		int index1 = input.indexOf("\"needle\":\"");
+		int index2 = input.indexOf("\"}}");
 		
-		return "";
+		for (int i = index1 + keyLength; i < index2; i++) {
+			needle += input.charAt(i);
+		}
+		
+		return needle;
 	}
 	
 	/**private instance variables**/
 	private ArrayList<String> haystack = new ArrayList<String>();
-	private String needle;
+	private String needle = "";
 	
 }
