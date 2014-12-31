@@ -9,8 +9,14 @@ import java.util.*;
 public class Prefix {
 
 	public Prefix(String input) {
-		prefix = getPrefix(input);
-		array = getWords(input);
+		prefix = "";
+		array = new String[6];
+//		prefix = getPrefix(input);
+//		array = getWords(input);
+	}
+	
+	public String returnPrefix() {
+		return prefix;
 	}
 	
 	public String getPrefix(String input) {
