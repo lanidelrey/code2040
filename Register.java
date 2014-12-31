@@ -20,6 +20,9 @@ public class Register {
 		
 		// Challenge 1: reverse string
 		register.reverseString();
+		
+		// Challenge 2: find needle
+		register.findNeedle();
 	}
 	
 	/**general JSON methods**/
