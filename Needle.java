@@ -7,6 +7,9 @@
 import java.util.*;
 
 public class Needle {
+	public String token;
+	public int index;
+	
 	
 	public Needle(String token, String input) {
 		this.token = token;
@@ -60,6 +63,6 @@ public class Needle {
 	}
 	
 	/**private instance variables**/
-	private int index = -1;
-	private String token = "";
+//	private int index = -1;
+//	private String token = "";
 }
