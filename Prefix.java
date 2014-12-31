@@ -14,7 +14,12 @@ public class Prefix {
 	}
 	
 	public String getPrefix(String input) {
+		String key = "\"prefix\":\"";
+		int keyLength = key.length();
 		
+		for (int i = input.indexOf(key) + keyLength; i < input.indexOf("\"}}"); i++) {
+			prefix += input.charAt(i);
+		}
 		
 		return prefix;
 	}
