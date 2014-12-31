@@ -95,7 +95,7 @@ public class Register {
 		String valStrUrl = "http://challenge.code2040.org/api/validateneedle";
 		Needle needle = new Needle(haystack);
 		//int index = needle.getNeedleIndex();
-		register.getJson(valStrUrl, needleMap(index));
+		register.getJson(valStrUrl, needleMap(-1));
 	}
 	
 	/**static methods**/
