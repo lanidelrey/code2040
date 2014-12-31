@@ -43,7 +43,7 @@ public class Needle {
 	}
 	
 	/**private instance variables**/
-	private ArrayList<String> haystack;
+	private ArrayList<String> haystack = new ArrayList<String>();
 	private String needle;
 	
 }
