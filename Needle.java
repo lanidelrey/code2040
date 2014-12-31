@@ -38,6 +38,7 @@ public class Needle {
 	}
 	
 	private String pullNeedle(String input) {
+		String needle = "";
 		String key = "\"needle\":\"";
 		int keyLength = key.length();
 		int index1 = input.indexOf("\"needle\":\"");
@@ -49,8 +50,4 @@ public class Needle {
 		
 		return needle;
 	}
-	
-	/**private instance variables**/
-	private String needle = "";
-	private int index = -1;
 }
