@@ -7,7 +7,8 @@
 public class Needle {
 	
 	public Needle(String input) {
-		haystack = input;
+		haystack = pullArray(input);
+		needle = pullString(input);
 	}
 	
 	public int getNeedleIndex() {
@@ -16,7 +17,16 @@ public class Needle {
 		return 0;
 	}
 	
+	private String pullArray(String input) {
+		return "";
+	}
+	
+	private String pullString(String input) {
+		return "";
+	}
+	
 	/**private instance variables**/
 	private String haystack;
+	private String needle;
 	
 }
