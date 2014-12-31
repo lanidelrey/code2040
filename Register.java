@@ -123,8 +123,8 @@ public class Register {
 		Gson gson = new GsonBuilder().create();
 		Map<String, Object> result = gson.fromJson(json, Map.class);
 		String innerJson = gson.toJson(result.get("result"));
-		MapWrapper wrapper = );
-		return gson.fromJson(innerJson, MapWrapper.class
+		MapWrapper wrapper = gson.fromJson(innerJson, MapWrapper.class);
+		return wrapper;
 	}
 	
 	/**static methods**/
