@@ -45,6 +45,7 @@ public class Prefix {
 			array[j] = arrayList.get(j);
 		}
 		
+		System.out.println("array: " + array);
 		return array;
 	}
 	
