@@ -121,13 +121,13 @@ public class Register {
 		return map;
 	}
 	
-	private static Map needleMap() {
+	private static String needleJson() {
 		
 //		Needle needle = new Needle(token, register.getHaystack());
 //		Map<String, Needle> map = new HashMap<String, Needle>();
 //		map.put("token", needle.getToken());
 //		map.put("needle", needle.getIndex());
-		return map;
+		return "";
 	}
 	
 	/**private instance variables**/
