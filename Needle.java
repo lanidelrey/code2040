@@ -21,7 +21,7 @@ public class Needle {
 	
 	private ArrayList<String> pullArray(String input) {
 		int index = input.indexOf("\"haystack\":");
-		return "";
+		return haystack;
 	}
 	
 	private String pullString(String input) {
