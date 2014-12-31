@@ -128,7 +128,7 @@ public class Register {
 	private MapWrapper deserializeJson(String json) throws IOException {
 		Gson gson = new GsonBuilder().create();
 		Map<String, Object> result = gson.fromJson(json, Map.class);
-		System.out.println(result);
+		System.out.println("yes");
 		String innerJson = gson.toJson(result.get("result"));
 		MapWrapper wrapper = gson.fromJson(innerJson, MapWrapper.class);
 		return wrapper;
