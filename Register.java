@@ -110,11 +110,11 @@ public class Register {
 	}
 	
 	private void prefixData() throws IOException {
-		Prefix prefixData = new Prefix(register.getPrefixArray());
+		Prefix prefixData1 = new Prefix(register.getPrefixArray());
 	}
 	
 	private void deserializePrefix() throws IOException {
-		
+		PrefixResult prefixData = new ObjectMapper().readValue(register.getPrefixArray(), PrefixResult.class);
 	}
 	
 	/**static methods**/
