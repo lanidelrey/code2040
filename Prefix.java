@@ -10,7 +10,7 @@ public class Prefix {
 
 	public Prefix() {
 		prefix = "";
-		array = new ArrayList<String>();
+		array = new String[6];
 	}
 	
 	public String getPrefix() {
@@ -23,5 +23,5 @@ public class Prefix {
 	
 	/**public instance variables**/
 	public String prefix;
-	public ArrayList<String> array;
+	public String[] array;
 }
