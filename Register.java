@@ -118,6 +118,12 @@ public class Register {
 		return map;
 	}
 	
+	private static Map needleMap(int index) {
+		Map<String, Integer> map = new HashMap<String, Integer>();
+		map.put("needle", index);
+		return map;
+	}
+	
 	/**private instance variables**/
 	private static Register register = new Register();
 	private static String token = "";
