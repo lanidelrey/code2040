@@ -25,7 +25,7 @@ public class Register {
 		register.sendIndex();
 		
 		// Challenge 3: find non-prefixed words
-		register.getPrefixArray();
+		register.deserializePrefix();
 	}
 	
 	/**general JSON methods**/
