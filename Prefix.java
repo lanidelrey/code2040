@@ -19,6 +19,10 @@ public class Prefix {
 		return prefix;
 	}
 	
+	public String[] returnArray() {
+		return array;
+	}
+	
 	public String getPrefix(String input) {
 		String key = "\"prefix\":\"";
 		int keyLength = key.length();
