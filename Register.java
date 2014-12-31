@@ -23,6 +23,9 @@ public class Register {
 		
 		// Challenge 2: find needle
 		register.sendIndex();
+		
+		// Challenge 3: find non-prefixed words
+		register.getPrefixArray();
 	}
 	
 	/**general JSON methods**/
