@@ -119,8 +119,9 @@ public class Register {
 	}
 	
 	private static Map needleMap(int index) {
-		Map<String, Integer> map = new HashMap<String, Integer>();
-		map.put("needle", index);
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("token", token);
+		map.put("needle", " + index + ");
 		return map;
 	}
 	
