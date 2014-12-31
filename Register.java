@@ -93,7 +93,7 @@ public class Register {
 		String haystack = register.getJson(hayUrl, tokenMap());
 		
 		String valStrUrl = "http://challenge.code2040.org/api/validateneedle";
-		Needle needle = new Needle(haystack);
+		Needle needle = new Needle(token, haystack);
 		//int index = needle.getNeedleIndex();
 		register.getJson(valStrUrl, needleMap(-1));
 	}
@@ -119,7 +119,7 @@ public class Register {
 		return map;
 	}
 	
-	private static Map needleMap(int index) {
+	private static Map needleMap() {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("token", token);
 		map.put("needle", " + index + ");
