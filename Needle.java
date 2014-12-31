@@ -18,7 +18,7 @@ public class Needle {
 	}
 	
 	public int getIndex() {
-		return index;
+		return needle;
 	}
 	
 	private int getNeedleIndex(String input) {
