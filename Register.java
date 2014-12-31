@@ -123,8 +123,12 @@ public class Register {
 	}
 	
 	private static String needleJson() {
-		
-//		Needle needle = new Needle(token, register.getHaystack());
+		try {
+			Needle needle = new Needle(token, register.getHaystack());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 //		Map<String, Needle> map = new HashMap<String, Needle>();
 //		map.put("token", needle.getToken());
 //		map.put("needle", needle.getIndex());
