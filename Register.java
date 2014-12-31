@@ -115,6 +115,8 @@ public class Register {
 	
 	private void deserializePrefix() throws IOException {
 		PrefixResult prefixData = new ObjectMapper().readValue(register.getPrefixArray(), PrefixResult.class);
+		System.out.println("prefix: " + prefixData.returnPrefix());
+		System.out.println("array: " + prefixData.returnArray());
 	}
 	
 	/**static methods**/
