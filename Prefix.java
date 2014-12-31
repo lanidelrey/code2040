@@ -8,9 +8,9 @@ import java.util.*;
 
 public class Prefix {
 
-	public Prefix(String input) {
-		prefix = "";
-		array = new String[6];
+	public Prefix(String[] array, String prefix) {
+		this.prefix = prefix;
+		this.array = array;
 //		prefix = getPrefix(input);
 //		array = getWords(input);
 	}
