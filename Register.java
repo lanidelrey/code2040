@@ -96,7 +96,6 @@ public class Register {
 	
 	private void sendIndex() throws IOException {
 		String valStrUrl = "http://challenge.code2040.org/api/validateneedle";
-		Needle needle = new Needle(token, register.getHaystack());
 		register.makeRequest(valStrUrl, Register.needleJson());
 	}
 	
