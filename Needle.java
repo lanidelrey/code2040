@@ -59,7 +59,7 @@ public class Needle {
 		return needle;
 	}
 	
-	/**private instance variables**/
+	/**public instance variables**/
 	public int needle = -1;
 	public String token = "";
 }
