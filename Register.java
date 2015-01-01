@@ -115,7 +115,7 @@ public class Register {
 		return register.getJson(prefUrl, tokenMap());
 	}
 	
-	private String[] workPrefixArray() throws IOException {
+	private void workPrefixArray() throws IOException {
 		Gson gson = new GsonBuilder().create();
 		String json = register.getPrefixArray();
 		PrefixJSON result = gson.fromJson(json, PrefixJSON.class);
