@@ -37,6 +37,6 @@ public class Prefix {
 	
 	@Override
 	public String toString() {
-		return "Prefix [prefix = " + prefix + ", array = " + array + "]";
+		return "Prefix [prefix = " + prefix + ", array = " + arrayToString() + "]";
 	}
 }
