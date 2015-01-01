@@ -18,6 +18,10 @@ public class PrefixJSON {
 		this.result = prefix;
 	}
 	
+	public String[] getFinalArray() {
+		return result.searchPrefixes();
+	}
+	
 	@Override
 	public String toString() {
 		return "PrefixJSON [result = " + result + "]";
