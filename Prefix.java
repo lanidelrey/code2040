@@ -14,7 +14,7 @@ public class Prefix {
 	private String arrayToString() {
 		String poop = "";
 		for (int i = 0; i < array.length; i++) {
-			poop += array[i] + " ";
+			poop += " " + array[i];
 		}
 		return poop;
 	}
