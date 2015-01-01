@@ -129,7 +129,7 @@ public class Register {
 		Map<String,Object> result = InnerJSONJavaObj.getFromJSON(json,Map.class);
 		System.out.println("aaa");
 		System.out.println(result.get("result"));
-		String innerJson = (String) result.get("result");
+		String innerJson = result.get("result").toString();
 		System.out.println("innerJson: " + innerJson);
 		MapWrapper wrapper = InnerJSONJavaObj.getFromJSON(innerJson,MapWrapper.class);
 		System.out.println("wrapper: " + wrapper);
