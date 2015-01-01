@@ -26,4 +26,8 @@ public class Prefix {
 	public void setArray(String[] array) {
 		this.array = array;
 	}
+	
+	public String toString() {
+		return "Prefix [prefix = " + prefix + ", array = " + array + "]";
+	}
 }
