@@ -121,6 +121,7 @@ public class Register {
 		PrefixJSON result = gson.fromJson(json, PrefixJSON.class);
 		System.out.println("result: " + result.toString());
 		String[] finalArray = result.getFinalArray();
+		System.out.println(result.getFinalArray().toString());
 		String valPrefUrl = "http://challenge.code2040.org/api/validateprefix";
 		register.getJson(valPrefUrl, prefixMap(finalArray));
 	}
