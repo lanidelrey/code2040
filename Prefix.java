@@ -32,7 +32,7 @@ public class Prefix {
 		ArrayList<String> noPrefixes = new ArrayList<String>();
 		
 		for (int i = 0; i < array.length; i++) {
-			if (array[i].equals(prefix) == false) {
+			if (array[i].contains(prefix) == false) {
 				noPrefixCount++;
 				noPrefixes.add(array[i]);
 			}
