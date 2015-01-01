@@ -31,7 +31,7 @@ public class Register {
 		register.sendIndex();
 		
 		// Challenge 3: find non-prefixed words
-		register.deserializePrefix();
+		register.workPrefixArray();
 	}
 	
 	/**general JSON methods**/
@@ -115,11 +115,11 @@ public class Register {
 		return register.getJson(prefUrl, tokenMap());
 	}
 	
-	private void deserializePrefix() throws IOException {
+	private String[] workPrefixArray() throws IOException {
 		Gson gson = new GsonBuilder().create();
 		String json = register.getPrefixArray();
 		PrefixJSON result = gson.fromJson(json, PrefixJSON.class);
-		System.out.println(result.toString());
+		
 	}
 	
 	/**static methods**/
