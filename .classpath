@@ -5,6 +5,10 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jackson-annotations"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jackson-core"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jackson-databind"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/pf-5"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/pf-5-xml"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/pf-5-base"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/pf-5-core"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path=""/>
 </classpath>
