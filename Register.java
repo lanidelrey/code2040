@@ -124,6 +124,10 @@ public class Register {
 		register.getJson(valPrefUrl, prefixMap(finalArray));
 	}
 	
+	
+	/**Challenge 4**/
+	
+	
 	/**static methods**/
 	private static Map<String, String> registrationMap() {
 		Map<String, String> map = new HashMap<String, String>();
