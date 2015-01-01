@@ -128,7 +128,7 @@ public class Register {
 	private MapWrapper deserializeJson(String json) throws IOException {
 		Map<String,Object> result = InnerJSONJavaObj.getFromJSON(json,Map.class);
 		System.out.println("aaa");
-		String innerJson = InnerJSONJavaObj.toJSON(result.get("root"));
+		String innerJson = InnerJSONJavaObj.toJSON(result.get("root")).toString();
 		System.out.println("innerJson: " + innerJson);
 		MapWrapper wrapper = InnerJSONJavaObj.getFromJSON(innerJson,MapWrapper.class);
 		System.out.println("wrapper: " + wrapper);
