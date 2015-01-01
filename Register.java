@@ -139,6 +139,7 @@ public class Register {
 	private void deserialize2(String json) throws IOException {
 		Gson gson = new GsonBuilder().create();
 		PrefixJSON result = gson.fromJson(json, PrefixJSON.class);
+		System.out.println(result.toString());
 	}
 	
 	/**static methods**/
