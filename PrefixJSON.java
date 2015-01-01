@@ -17,4 +17,9 @@ public class PrefixJSON {
 	public void setPrefixJSON(Prefix prefix) {
 		this.result = prefix;
 	}
+	
+	@Override
+	public String toString() {
+		return "PrefixJSON [result = " + result + "]";
+	}
 }
