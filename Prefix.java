@@ -27,6 +27,7 @@ public class Prefix {
 		this.array = array;
 	}
 	
+	@Override
 	public String toString() {
 		return "Prefix [prefix = " + prefix + ", array = " + array + "]";
 	}
