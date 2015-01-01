@@ -125,7 +125,7 @@ public class Register {
 //		System.out.println("array: " + prefixData.returnArray());
 	}
 	
-	private MapWrapper deserializeJson(String json) throws IOException {
+	private Map deserializeJson(String json) throws IOException {
 		Map<String,Object> result = InnerJSONJavaObj.getFromJSON(json, Map.class);
 		System.out.println("aaa");
 		System.out.println(result.get("result"));
