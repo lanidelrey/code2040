@@ -114,7 +114,7 @@ public class Register {
 	}
 	
 	private void deserializePrefix() throws IOException {
-		String json = register.deserialize2(register.getPrefixArray());
+		String json = register.deserializePrefixResult(register.getPrefixArray());
 		System.out.println("deserialized json: " + json);
 	}
 	
