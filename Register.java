@@ -95,6 +95,7 @@ public class Register {
 		register.getJson(valStrUrl, stringMap(reversed));
 	}
 	
+	
 	/**Challenge 2**/
 	private String getHaystack() throws IOException {
 		String hayUrl = "http://challenge.code2040.org/api/haystack";
@@ -107,6 +108,7 @@ public class Register {
 		register.makeRequest(valStrUrl, Register.needleJson());
 	}
 	
+	
 	/**Challenge 3**/
 	private String getPrefixArray() throws IOException {
 		String prefUrl = "http://challenge.code2040.org/api/prefix";
@@ -114,15 +116,10 @@ public class Register {
 	}
 	
 	private void deserializePrefix() throws IOException {
-		String json = register.deserializePrefixResult(register.getPrefixArray());
-		System.out.println("deserialized json: " + json);
-	}
-	
-	private String deserializePrefixResult(String json) throws IOException {
 		Gson gson = new GsonBuilder().create();
+		String json = register.getPrefixArray();
 		PrefixJSON result = gson.fromJson(json, PrefixJSON.class);
 		System.out.println(result.toString());
-		return result.toString();
 	}
 	
 	/**static methods**/
