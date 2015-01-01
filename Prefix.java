@@ -41,8 +41,14 @@ public class Prefix {
 		setFinalArray(noPrefixCount, noPrefixes);
 	}
 	
-	private void setFinalArray(int count, ArrayList<String> words) {
+	private String[] setFinalArray(int count, ArrayList<String> words) {
+		String[] finalArray = new String[count];
 		
+		for (int i = 0; i < count; i++) {
+			finalArray[i] = words.get(i);
+		}
+		
+		return finalArray;
 	}
 	
 	@Override
