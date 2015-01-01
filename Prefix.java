@@ -12,11 +12,11 @@ public class Prefix {
 	private String[] array;
 	
 	private String arrayToString() {
-		String poop = "";
+		String stringArray = "";
 		for (int i = 0; i < array.length; i++) {
-			poop += " " + array[i];
+			stringArray += " " + array[i];
 		}
-		return poop;
+		return stringArray;
 	}
 	
 	public String getPrefix() {
