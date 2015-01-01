@@ -118,7 +118,7 @@ public class Register {
 		System.out.println("deserialized json: " + json);
 	}
 	
-	private String deserialize2(String json) throws IOException {
+	private String deserializePrefixResult(String json) throws IOException {
 		Gson gson = new GsonBuilder().create();
 		PrefixJSON result = gson.fromJson(json, PrefixJSON.class);
 		System.out.println(result.toString());
