@@ -27,7 +27,7 @@ public class Prefix {
 		return array;
 	}
 	
-	public void searchPrefixes() {
+	public String[] searchPrefixes() {
 		int noPrefixCount = 0;
 		ArrayList<String> noPrefixes = new ArrayList<String>();
 		
@@ -38,7 +38,7 @@ public class Prefix {
 			}
 		}
 		
-		setFinalArray(noPrefixCount, noPrefixes);
+		return setFinalArray(noPrefixCount, noPrefixes);
 	}
 	
 	private String[] setFinalArray(int count, ArrayList<String> words) {
