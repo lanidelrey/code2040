@@ -119,27 +119,35 @@ public class Register {
 		Gson gson = new GsonBuilder().create();
 		String json = register.getPrefixArray();
 		PrefixJSON result = gson.fromJson(json, PrefixJSON.class);
+		String[] finalArray = result.getFinalArray();
 		
 	}
 	
 	/**static methods**/
-	private static Map registrationMap() {
+	private static Map<String, String> registrationMap() {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("email", "leilani3@stanford.edu");
 		map.put("github", "https://github.com/lanidelrey/code2040");
 		return map;
 	}
 	
-	private static Map tokenMap() {
+	private static Map<String, String> tokenMap() {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("token", token);
 		return map;
 	}
 	
-	private static Map stringMap(String string) {
+	private static Map<String, String> stringMap(String string) {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("token", token);
 		map.put("string", string);
+		return map;
+	}
+	
+	private static Map<String, Object> prefixMap(String[] array) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("token", token);
+		map.put("array", array);
 		return map;
 	}
 	
