@@ -27,12 +27,22 @@ public class Prefix {
 		return array;
 	}
 	
-	public void setPrefix(String prefix) {
-		this.prefix = prefix;
+	public void searchPrefixes() {
+		int noPrefixCount = 0;
+		ArrayList<String> noPrefixes = new ArrayList<String>();
+		
+		for (int i = 0; i < array.length; i++) {
+			if (array[i].equals(prefix) == false) {
+				noPrefixCount++;
+				noPrefixes.add(array[i]);
+			}
+		}
+		
+		setFinalArray(noPrefixCount, noPrefixes);
 	}
 	
-	public void setArray(String[] array) {
-		this.array = array;
+	private void setFinalArray(int count, ArrayList<String> words) {
+		
 	}
 	
 	@Override
