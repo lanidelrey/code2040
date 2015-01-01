@@ -11,6 +11,14 @@ public class Prefix {
 	private String prefix;
 	private String[] array;
 	
+	private String arrayToString() {
+		String poop = "";
+		for (int i = 0; i < array.length; i++) {
+			poop += array[i];
+		}
+		return poop;
+	}
+	
 	public String getPrefix() {
 		return prefix;
 	}
