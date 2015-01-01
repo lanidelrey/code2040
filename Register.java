@@ -125,13 +125,13 @@ public class Register {
 //		System.out.println("array: " + prefixData.returnArray());
 	}
 	
-	private Map deserializeJson(String json) throws IOException {
+	private MapWrapper deserializeJson(String json) throws IOException {
 		Map<String,Object> result = InnerJSONJavaObj.getFromJSON(json, Map.class);
 		System.out.println("aaa");
 		System.out.println(result.get("result"));
 		String innerJson = result.get("result").toString();
 		System.out.println("innerJson: " + innerJson);
-		Map<String, Object> wrapper = InnerJSONJavaObj.getFromJSON(innerJson, Map.class); //buggy
+		MapWrapper<String, Object> wrapper = InnerJSONJavaObj.getFromJSON(innerJson, MapWrapper.class); //buggy
 		System.out.println("wrapper: " + wrapper);
 		return wrapper;
 	}
