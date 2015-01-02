@@ -4,16 +4,17 @@
  * This class defines deserialized JSON data for the datestamp challenge.
  */
 
-import java.util.*;
-
 public class TimeJSON {
 	
+	/**private instance variables**/
 	private Time result;
 	
+	/**public methods**/
 	public Time getResult() {
 		return result;
 	}
 	
+	// sum of given interval and given datestamp
 	public String getAnswer() {
 		return result.addInterval();
 	}
