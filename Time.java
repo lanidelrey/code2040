@@ -4,7 +4,7 @@
  * This class defines deserialized JSON data for the datestamp challenge.
  */
 
-import java.util.*;
+import javax.xml.datatype.XMLGregorianCalendar;
 
 public class Time {
 	
