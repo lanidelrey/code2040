@@ -11,6 +11,11 @@ public class Time {
 	private String datestamp;
 	private String interval;
 	
+	private void makeJoda() {
+		DateTime date = new DateTime(datestamp);
+		DateTime interval = new DateTime(interval);
+	}
+	
 	public String getDatestamp() {
 		return datestamp;
 	}
