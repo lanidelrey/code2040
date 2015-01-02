@@ -6,14 +6,16 @@
 
 public class Reverse {
 	
+	/**private instance variables**/
 	private String result;
 	
+	/**public methods**/
 	public String getResult() {
 		return result;
 	}
 	
 	public String reverseString() {
-		StringBuffer sb = new StringBuffer(getResult());
+		StringBuffer sb = new StringBuffer(getResult());	// facilitates string reversal
 		String reversed = sb.reverse().toString();
 		System.out.println("original: " + sb);
 		System.out.println("reversed: " + reversed);
