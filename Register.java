@@ -96,15 +96,16 @@ public class Register {
 	
 	
 	/**Challenge 2**/
-	private String getHaystack() throws IOException {
+	private String needleIndex() throws IOException {
+		Gson gson = new GsonBuilder().create();
 		String hayUrl = "http://challenge.code2040.org/api/haystack";
-		String haystack = register.getJson(hayUrl, tokenMap());
-		return haystack;
-	}
-	
-	private void sendIndex() throws IOException {
+		String json = register.getJson(hayUrl, tokenMap());
+		
+		NeedleJSON result = gson.fromJson(json, NeedleJSON.class);
+		int index = result.getIndex();
+		
 		String valStrUrl = "http://challenge.code2040.org/api/validateneedle";
-		register.makeRequest(valStrUrl, Register.needleJson());
+		register.makeRequest(valStrUrl, register.needleMap(index));
 	}
 	
 	
@@ -156,6 +157,13 @@ public class Register {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("token", token);
 		map.put("string", string);
+		return map;
+	}
+	
+	private static Map<String, Object> needleMap(int index) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("token", token);
+		map.put("needle", index);
 		return map;
 	}
 	
