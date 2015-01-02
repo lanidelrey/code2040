@@ -77,12 +77,14 @@ public class Register {
 	
 	/**Challenge 1: reverse given string**/
 	private void reverseString() throws IOException {
-		
+		// posts token request, retrieves initial JSON dictionary
 		String getStrUrl = "http://challenge.code2040.org/api/getstring";
 		String json = register.getJson(getStrUrl, tokenMap());
 		
+		// converts JSON string to elements of Reverse class
 		Reverse reverse = gson.fromJson(json, Reverse.class);
 
+		// posts token & solution request, retrieves validation
 		String valStrUrl = "http://challenge.code2040.org/api/validatestring";
 		register.getJson(valStrUrl, stringMap(reverse.reverseString()));
 	}
