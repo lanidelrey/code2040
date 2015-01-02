@@ -19,7 +19,7 @@ public class Needle {
 		return haystack;
 	}
 	
-	private int getNeedleIndex(String input) {
-		return haystack.indexOf(needle);
-	}
+//	private int getNeedleIndex(String input) {
+//		return haystack.indexOf(needle);
+//	}
 }
