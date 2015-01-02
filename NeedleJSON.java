@@ -14,9 +14,9 @@ public class NeedleJSON {
 		return result;
 	}
 	
-//	private int getNeedleIndex(String input) {
-//		return haystack.indexOf(needle);
-//	}
+	public int getIndex() {
+		result.getNeedleIndex();
+	}
 	
 	@Override
 	public String toString() {
