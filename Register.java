@@ -34,7 +34,7 @@ public class Register {
 	
 	/**general JSON methods**/
 	private String getJson(String url, Map map) throws IOException {
-		String json = new GsonBuilder().create().toJson(map, Map.class);
+		String json = gson.toJson(map, Map.class);
 		String response = makeRequest(url, json);
 		return response;
 	}
@@ -83,7 +83,7 @@ public class Register {
 	
 	/**Challenge 1**/
 	private void reverseString() throws IOException {
-		Gson gson = new GsonBuilder().create();
+		
 		String getStrUrl = "http://challenge.code2040.org/api/getstring";
 		String json = register.getJson(getStrUrl, tokenMap());
 		
@@ -96,7 +96,7 @@ public class Register {
 	
 	/**Challenge 2**/
 	private void needleIndex() throws IOException {
-		Gson gson = new GsonBuilder().create();
+		
 		String hayUrl = "http://challenge.code2040.org/api/haystack";
 		String json = register.getJson(hayUrl, tokenMap());
 		
@@ -115,7 +115,7 @@ public class Register {
 	}
 	
 	private void workPrefixArray() throws IOException {
-		Gson gson = new GsonBuilder().create();
+		
 		String json = register.getPrefixArray();
 		PrefixJSON result = gson.fromJson(json, PrefixJSON.class);
 		String[] finalArray = result.getFinalArray();
@@ -129,7 +129,6 @@ public class Register {
 	private void getDateStamps() throws IOException {
 		String timeUrl = "http://challenge.code2040.org/api/time";
 		
-		Gson gson = new GsonBuilder().create();
 		String json = register.getJson(timeUrl, tokenMap());
 		TimeJSON result = gson.fromJson(json, TimeJSON.class);
 		String answer = result.getAnswer();
@@ -183,4 +182,5 @@ public class Register {
 	/**private instance variables**/
 	private static Register register = new Register();
 	private static String token = "";
+	private static Gson gson = new GsonBuilder().create();
 }
