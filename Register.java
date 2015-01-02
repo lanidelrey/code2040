@@ -133,6 +133,11 @@ public class Register {
 	private void getDateStamps() throws IOException {
 		String timeUrl = "http://challenge.code2040.org/api/time";
 		register.getJson(timeUrl, tokenMap());
+		
+	}
+	
+	private void addInterval() throws IOException {
+		//Calendar calendar = parseDataTime;
 	}
 	
 	/**static methods**/
