@@ -127,7 +127,7 @@ public class Register {
 		register.getJson(valTimeUrl, register.timeMap(answer));
 	}
 	
-	/**static methods**/
+	/**static methods, necessary for JSON construction**/
 	private static Map<String, String> registrationMap() {
 		Map<String, String> map = new HashMap<String, String>();
 		map.put("email", "leilani3@stanford.edu");
