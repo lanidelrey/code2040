@@ -4,12 +4,12 @@
  * This class defines deserialized JSON data for the prefix challenge.
  */
 
-import java.util.*;
-
 public class PrefixJSON {
 	
+	/**private instance variables**/
 	private Prefix result;
 	
+	/**public methods**/
 	public Prefix getResult() {
 		return result;
 	}
