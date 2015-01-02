@@ -92,13 +92,15 @@ public class Register {
 	
 	/**Challenge 2: find needle in haystack**/
 	private void needleIndex() throws IOException {
-		
+		// posts token request, retrieves initial JSON dictionary
 		String hayUrl = "http://challenge.code2040.org/api/haystack";
 		String json = register.getJson(hayUrl, tokenMap());
 		
+		// converts JSON string to elements of Needle/JSON classes, gets needle index
 		NeedleJSON result = gson.fromJson(json, NeedleJSON.class);
 		int index = result.getIndex();
 		
+		// posts token & solution request, retrieves validation
 		String valStrUrl = "http://challenge.code2040.org/api/validateneedle";
 		register.getJson(valStrUrl, register.needleMap(index));
 	}
