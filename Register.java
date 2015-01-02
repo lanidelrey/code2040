@@ -98,7 +98,7 @@ public class Register {
 	}
 	
 	
-	/**Challenge 3**/
+	/**Challenge 3: find words w/o prefix**/
 	private String getPrefixArray() throws IOException {
 		String prefUrl = "http://challenge.code2040.org/api/prefix";
 		return register.getJson(prefUrl, tokenMap());
