@@ -25,6 +25,6 @@ public class Needle {
 				return i;
 			}
 		}
-		return -1;
+		return -1;	// -1 to signify absence of needle in haystack
 	}
 }
