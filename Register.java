@@ -70,18 +70,6 @@ public class Register {
 		return response;
 	}
 	
-	private String strip(String response) {
-		int index = response.indexOf(":\"") + 2;
-		int end = response.length() - 2;
-		String stripped = "";
-		
-		for(int i = index; i < end; i++) {
-			stripped += response.charAt(i);
-		}
-		
-		System.out.println(stripped);
-		return stripped;
-	}
 	
 	/**Challenge 1**/
 	private void reverseString() throws IOException {
