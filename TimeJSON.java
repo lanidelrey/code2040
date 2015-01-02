@@ -8,22 +8,14 @@ import java.util.*;
 
 public class TimeJSON {
 	
-	private Time time;
+	private Time result;
 	
-	public Prefix getResult() {
+	public Time getResult() {
 		return result;
-	}
-	
-	public void setPrefixJSON(Prefix prefix) {
-		this.result = prefix;
-	}
-	
-	public String[] getFinalArray() {
-		return result.searchPrefixes();
 	}
 	
 	@Override
 	public String toString() {
-		return "PrefixJSON [result = " + result + "]";
+		return "TimeJSON [result = " + result + "]";
 	}
 }
