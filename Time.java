@@ -4,7 +4,7 @@
  * This class defines deserialized JSON data for the datestamp challenge.
  */
 
-import javax.xml.datatype.XMLGregorianCalendar;
+import org.joda.time.*;
 
 public class Time {
 	
