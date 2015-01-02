@@ -35,12 +35,14 @@ public class Register {
 	}
 	
 	/**general JSON methods**/
+	// converts map to JSON, sends http POST request to prescribed URL
 	private String getJson(String url, Map map) throws IOException {
 		String json = gson.toJson(map, Map.class);
 		String response = makeRequest(url, json);
 		return response;
 	}
 	
+	//
 	private String makeRequest(String url, String json) throws IOException {
 		System.out.println("sending http POST request");
 		URL obj = new URL(url);
