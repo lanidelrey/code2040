@@ -33,6 +33,7 @@ public class Prefix {
 		return finalArray;
 	}
 	
+	
 	/**public methods**/
 	public String getPrefix() {
 		return prefix;
@@ -42,7 +43,7 @@ public class Prefix {
 		return array;
 	}
 	
-	// adds words w/o prefix to ArrayList, referenced later
+	// adds words w/o prefix to ArrayList, referenced above
 	public String[] searchPrefixes() {
 		int noPrefixCount = 0;
 		ArrayList<String> noPrefixes = new ArrayList<String>();
