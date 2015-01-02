@@ -20,6 +20,11 @@ public class Needle {
 	}
 	
 	public int getNeedleIndex() {
-		return haystack.indexOf(needle);
+		for (int i = 0; i < haystack.length; i++) {
+			if (haystack[i].equals(needle)) {
+				return i;
+			}
+		}
+		return -1;
 	}
 }
