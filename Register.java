@@ -9,7 +9,8 @@
  * 		Joda-Time for ISO format time handling)
  * -	experimented Jackson and MapWrapper implementations for JSON handling before
  * 		settling on Google GSON
- * -	
+ * -	learned how to unpack nested JSON dictionaries of multiple types by creating
+ * 		nested classes
  */
 
 import java.io.*;	// allows use of IOException handling
