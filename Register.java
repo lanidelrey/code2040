@@ -140,7 +140,9 @@ public class Register {
 	
 	/**Bonus: checks API challenge status**/
 	private void checkStatus() throws IOException {
-		
+		// posts token request, retrieves status
+		String statusUrl = "http://challenge.code2040.org/api/status";
+		register.getJson(statusUrl, tokenMap());
 	}
 	
 	
