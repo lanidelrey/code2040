@@ -108,12 +108,15 @@ public class Register {
 	
 	/**Challenge 3: find words w/o prefix**/
 	private void workPrefixArray() throws IOException {
+		// posts token request, retrieves initial JSON dictionary
 		String prefUrl = "http://challenge.code2040.org/api/prefix";
 		String json = register.getJson(prefUrl, tokenMap());
 		
+		// converts JSON string to elements of Prefix/JSON classes, gets array of non-prefixes
 		PrefixJSON result = gson.fromJson(json, PrefixJSON.class);
 		String[] finalArray = result.getFinalArray();
 		
+		// posts token & solution request, retrieves validation
 		String valPrefUrl = "http://challenge.code2040.org/api/validateprefix";
 		register.getJson(valPrefUrl, prefixMap(finalArray));
 	}
