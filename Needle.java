@@ -7,26 +7,19 @@
 import java.util.*;
 
 public class Needle {
-
-	public Needle(String token, String input) {
-		this.token = token;
-		needle = getNeedleIndex(input);
-	}
 	
-	public String getToken() {
-		return token;
-	}
+	private String[] haystack;
+	private String needle;
 	
-	public int getIndex() {
+	public String getNeedle() {
 		return needle;
 	}
 	
-	private int getNeedleIndex(String input) {
-		return array.indexOf(needle);
+	public String[] getHaystack() {
+		return haystack;
 	}
 	
-	
-	/**public instance variables**/
-	public int needle = -1;
-	public String token = "";
+	private int getNeedleIndex(String input) {
+		return haystack.indexOf(needle);
+	}
 }
