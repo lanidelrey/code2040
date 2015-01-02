@@ -15,7 +15,7 @@ public class NeedleJSON {
 	}
 	
 	public int getIndex() {
-		result.getNeedleIndex();
+		return result.getNeedleIndex();
 	}
 	
 	@Override
