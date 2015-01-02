@@ -133,6 +133,9 @@ public class Register {
 		TimeJSON result = gson.fromJson(json, TimeJSON.class);
 		System.out.println(result.toString());
 		Map<String, String> map = register.timeMap(result.getAnswer());
+		
+		String valTimeUrl = "http://challenge.code2040.org/api/validatetime";
+		register.getJson(valTimeUrl, map);
 	}
 	
 	/**static methods**/
