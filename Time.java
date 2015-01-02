@@ -13,9 +13,9 @@ public class Time {
 	
 	private void addInterval() {
 		DateTime date = new DateTime(datestamp);
-		long inter = Long.parseLong(interval);
+		int inter = Integer.parseInt(interval);
 		
-		date.plus(inter);
+		date.plusSeconds(inter);
 	}
 	
 	public String getDatestamp() {
