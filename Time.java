@@ -8,7 +8,8 @@ import java.util.*;
 
 public class Time {
 	
-	private Prefix result;
+	private String datestamp;
+	private String datestamp;
 	
 	public Prefix getResult() {
 		return result;
