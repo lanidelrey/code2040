@@ -13,7 +13,7 @@ public class Time {
 	
 	private void makeJoda() {
 		DateTime date = new DateTime(datestamp);
-		DateTime interval = new DateTime(interval);
+		DateTime inter = new DateTime(interval);
 	}
 	
 	public String getDatestamp() {
