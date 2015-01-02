@@ -14,6 +14,7 @@ public class NeedleJSON {
 		return result;
 	}
 	
+	// accesses method to find needle index of Needle.class
 	public int getIndex() {
 		return result.getNeedleIndex();
 	}
