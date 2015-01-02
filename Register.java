@@ -132,7 +132,7 @@ public class Register {
 		String json = register.getJson(timeUrl, tokenMap());
 		TimeJSON result = gson.fromJson(json, TimeJSON.class);
 		System.out.println(result.toString());
-		
+		result.getAnswer();
 	}
 	
 	/**static methods**/
