@@ -84,7 +84,7 @@ public class Register {
 	}
 	
 	
-	/**Challenge 2**/
+	/**Challenge 2: find needle in haystack**/
 	private void needleIndex() throws IOException {
 		
 		String hayUrl = "http://challenge.code2040.org/api/haystack";
