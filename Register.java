@@ -13,6 +13,10 @@
  * 		nested classes
  * -	learned how to set up HTTP request to handle posted information (and its
  * 		destination) and subsequent response
+ * 
+ * Things to improve with further manipulation:
+ * -	consolidate commonly used method sequences into one method with passed-in
+ * 		parameters to allow customization (i.e. HashMap creation for JSON elements)
  */
 
 import java.io.*;	// allows use of IOException handling
