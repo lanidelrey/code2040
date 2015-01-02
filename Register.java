@@ -126,7 +126,10 @@ public class Register {
 	
 	
 	/**Challenge 4**/
-	
+	private String getDateStamps() throws IOException {
+		String timeUrl = "http://challenge.code2040.org/api/time";
+		return register.getJson(timeUrl, tokenMap());
+	}
 	
 	/**static methods**/
 	private static Map<String, String> registrationMap() {
