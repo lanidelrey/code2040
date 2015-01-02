@@ -8,7 +8,7 @@ import java.util.*;
 
 public class TimeJSON {
 	
-	private Prefix result;
+	private Time time;
 	
 	public Prefix getResult() {
 		return result;
