@@ -115,7 +115,7 @@ public class Register {
 	}
 	
 	
-	/**Challenge 4**/
+	/**Challenge 4: manipulate datestamps**/
 	private void getDateStamps() throws IOException {
 		String timeUrl = "http://challenge.code2040.org/api/time";
 		
@@ -126,6 +126,7 @@ public class Register {
 		String valTimeUrl = "http://challenge.code2040.org/api/validatetime";
 		register.getJson(valTimeUrl, register.timeMap(answer));
 	}
+	
 	
 	/**static methods, necessary for JSON construction**/
 	private static Map<String, String> registrationMap() {
