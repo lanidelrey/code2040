@@ -9,7 +9,7 @@
  */
 
 import java.io.*;
-import java.net.*;
+import java.net.*;	// allows HTTP/URL connection
 import java.util.*;
 
 import com.google.gson.Gson;	// facilitates JSON handling
