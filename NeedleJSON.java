@@ -4,12 +4,12 @@
  * This class defines deserialized JSON result.
  */
 
-import java.util.*;
-
 public class NeedleJSON {
 	
+	/**private instance variables**/
 	private Needle result;
 	
+	/**public methods**/
 	public Needle getResult() {
 		return result;
 	}
