@@ -138,6 +138,12 @@ public class Register {
 	}
 	
 	
+	/**Bonus: checks API challenge status**/
+	private void checkStatus() throws IOException {
+		
+	}
+	
+	
 	/**static methods, necessary for JSON construction**/
 	private static Map<String, String> registrationMap() {
 		Map<String, String> map = new HashMap<String, String>();
