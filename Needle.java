@@ -1,7 +1,7 @@
 /*
  * File: Needle.java
  * -------------------------------
- * This class finds the needle in the haystack.
+ * This class deserializes data of JSON result.
  */
 
 import java.util.*;
@@ -19,7 +19,7 @@ public class Needle {
 		return haystack;
 	}
 	
-//	private int getNeedleIndex(String input) {
-//		return haystack.indexOf(needle);
-//	}
+	public int getNeedleIndex() {
+		return haystack.indexOf(needle);
+	}
 }
