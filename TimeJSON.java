@@ -14,8 +14,8 @@ public class TimeJSON {
 		return result;
 	}
 	
-	public void getAnswer() {
-		result.addInterval();
+	public String getAnswer() {
+		return result.addInterval();
 	}
 	
 	@Override
