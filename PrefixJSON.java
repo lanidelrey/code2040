@@ -18,6 +18,7 @@ public class PrefixJSON {
 		this.result = prefix;
 	}
 	
+	// creates array only of strings w/o prefix
 	public String[] getFinalArray() {
 		return result.searchPrefixes();
 	}
