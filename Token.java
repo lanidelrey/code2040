@@ -6,8 +6,10 @@
 
 public class Token {
 	
+	/**private instance variables**/
 	private String result;
 	
+	/**public methods**/
 	public String getResult() {
 		return result;
 	}
