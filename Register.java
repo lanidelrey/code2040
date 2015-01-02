@@ -165,6 +165,8 @@ public class Register {
 	
 	private static Map<String, String> timeMap(String time) {
 		Map<String, String> map = new HashMap<String, String>();
+		map.put("token", token);
+		map.put("datestamp", time);
 		return map;
 	}
 	
