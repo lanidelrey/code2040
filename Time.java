@@ -14,8 +14,11 @@ public class Time {
 	private void addInterval() {
 		DateTime date = new DateTime(datestamp);
 		int inter = Integer.parseInt(interval);
+		DateTime newDate = date.plusSeconds(inter);
 		
-		date.plusSeconds(inter);
+		System.out.println("datestamp: " + date.toString());
+		System.out.println("interval: " + inter);
+		System.out.println("new: " + newDate.toString());
 	}
 	
 	public String getDatestamp() {
