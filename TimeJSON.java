@@ -14,6 +14,10 @@ public class TimeJSON {
 		return result;
 	}
 	
+	public void getAnswer() {
+		result.addInterval();
+	}
+	
 	@Override
 	public String toString() {
 		return "TimeJSON [result = " + result + "]";
