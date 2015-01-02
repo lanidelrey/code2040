@@ -24,7 +24,7 @@ public class Register {
 		register.reverseString();
 		
 		// Challenge 2: find needle
-		register.sendIndex();
+		register.needleIndex();
 		
 		// Challenge 3: find non-prefixed words
 		register.workPrefixArray();
