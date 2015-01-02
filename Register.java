@@ -49,7 +49,7 @@ public class Register {
 		// sets up connection to server, given URL
 		URL obj = new URL(url);
 		HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
-		connection.setRequestMethod("POST");
+		connection.setRequestMethod("POST");	// ensures 'POST' request
 		connection.setRequestProperty("Content-Type", "application/json");
 		connection.setDoInput(true);
 		connection.setDoOutput(true);
