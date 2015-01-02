@@ -54,7 +54,7 @@ public class Register {
 		connection.setDoInput(true);
 		connection.setDoOutput(true);
 		
-		// send request
+		// send request, JSON to bytes
 		DataOutputStream ds = new DataOutputStream(connection.getOutputStream());
 		ds.writeBytes(json);
 		ds.flush();
