@@ -43,7 +43,7 @@ public class Prefix {
 		return array;
 	}
 	
-	// adds words w/o prefix to ArrayList, referenced above
+	// adds words w/o prefix to ArrayList, reference above
 	public String[] searchPrefixes() {
 		int noPrefixCount = 0;
 		ArrayList<String> noPrefixes = new ArrayList<String>();
