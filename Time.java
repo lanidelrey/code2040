@@ -11,12 +11,12 @@ public class Time {
 	private String datestamp;
 	private String interval;
 	
-	public Prefix getResult() {
-		return result;
+	public String getDatestamp() {
+		return datestamp;
 	}
 	
-	public void setPrefixJSON(Prefix prefix) {
-		this.result = prefix;
+	public String getInterval() {
+		return interval;
 	}
 	
 	public String[] getFinalArray() {
