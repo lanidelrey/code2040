@@ -4,17 +4,19 @@
  * This class defines deserialized JSON data for the datestamp challenge.
  */
 
-import org.joda.time.*;
+import org.joda.time.*;	// facilitates ISO format handling
 
 public class Time {
 	
+	/**private instance variables**/
 	private String datestamp;
 	private String interval;
 	
+	/**public methods**/
 	public String addInterval() {
 		DateTime date = new DateTime(datestamp);
 		int inter = Integer.parseInt(interval);
-		DateTime newDate = date.plusSeconds(inter);
+		DateTime newDate = date.plusSeconds(inter);	// sum of interval and datestamp
 		
 		System.out.println("datestamp: " + date.toString());
 		System.out.println("interval: " + inter);
