@@ -132,7 +132,11 @@ public class Register {
 	/**Challenge 4**/
 	private void getDateStamps() throws IOException {
 		String timeUrl = "http://challenge.code2040.org/api/time";
-		register.getJson(timeUrl, tokenMap());
+		
+		Gson gson = new GsonBuilder().create();
+		String json = register.getJson(timeUrl, tokenMap());
+		TimeJSON result = gson.fromJson(json, TimeJSON.class);
+		System.out.println(result.toString());
 		
 	}
 	
