@@ -32,6 +32,9 @@ public class Register {
 		
 		// Challenge 4: add interval to date
 		register.getDateStamps();
+		
+		// Bonus: checks API challenge status
+		register.checkStatus();
 	}
 	
 	/**general JSON methods**/
