@@ -96,7 +96,7 @@ public class Register {
 	
 	
 	/**Challenge 2**/
-	private String needleIndex() throws IOException {
+	private void needleIndex() throws IOException {
 		Gson gson = new GsonBuilder().create();
 		String hayUrl = "http://challenge.code2040.org/api/haystack";
 		String json = register.getJson(hayUrl, tokenMap());
