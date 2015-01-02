@@ -11,7 +11,7 @@ public class Time {
 	private String datestamp;
 	private String interval;
 	
-	public void addInterval() {
+	public String addInterval() {
 		DateTime date = new DateTime(datestamp);
 		int inter = Integer.parseInt(interval);
 		DateTime newDate = date.plusSeconds(inter);
@@ -19,6 +19,8 @@ public class Time {
 		System.out.println("datestamp: " + date.toString());
 		System.out.println("interval: " + inter);
 		System.out.println("new: " + newDate.toString());
+		
+		return newDate.toString();
 	}
 	
 	public String getDatestamp() {
