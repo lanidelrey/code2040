@@ -5,12 +5,12 @@
  * It also completes subsequent challenges by calling instances of other classes.
  * 
  * Reflections on learning process:
- * -	learned how to search, download, and implement external 
+ * -	learned how to search, download, and implement external JRE libraries
  */
 
-import java.io.*;
+import java.io.*;	// allows use of IOException handling
 import java.net.*;	// allows HTTP/URL connection
-import java.util.*;
+import java.util.*;	// allows use of Hash/Maps
 
 import com.google.gson.Gson;	// facilitates JSON handling
 import com.google.gson.GsonBuilder;
