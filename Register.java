@@ -9,7 +9,6 @@ import java.io.*;
 import java.lang.*;
 import java.net.*;
 import java.util.*;
-import javax.xml.datatype.XMLGregorianCalendar;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -138,10 +137,6 @@ public class Register {
 		TimeJSON result = gson.fromJson(json, TimeJSON.class);
 		System.out.println(result.toString());
 		
-	}
-	
-	private void addInterval() throws IOException {
-		//Calendar calendar = parseDataTime;
 	}
 	
 	/**static methods**/
