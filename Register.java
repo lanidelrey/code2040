@@ -124,12 +124,15 @@ public class Register {
 	
 	/**Challenge 4: manipulate datestamps**/
 	private void getDateStamps() throws IOException {
+		// posts token request, retrieves initial JSON dictionary
 		String timeUrl = "http://challenge.code2040.org/api/time";
-		
 		String json = register.getJson(timeUrl, tokenMap());
+		
+		// converts JSON string to elements of Time/JSON classes, gets sum of elements
 		TimeJSON result = gson.fromJson(json, TimeJSON.class);
 		String answer = result.getAnswer();
 		
+		// posts token & solution request, retrieves validation
 		String valTimeUrl = "http://challenge.code2040.org/api/validatetime";
 		register.getJson(valTimeUrl, register.timeMap(answer));
 	}
