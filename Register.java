@@ -71,7 +71,7 @@ public class Register {
 	}
 	
 	
-	/**Challenge 1**/
+	/**Challenge 1: reverse given string**/
 	private void reverseString() throws IOException {
 		
 		String getStrUrl = "http://challenge.code2040.org/api/getstring";
