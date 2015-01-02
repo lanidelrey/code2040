@@ -163,6 +163,11 @@ public class Register {
 		return map;
 	}
 	
+	private static Map<String, String> timeMap(String time) {
+		Map<String, String> map = new HashMap<String, String>();
+		return map;
+	}
+	
 	private static String needleJson() {
 		try {
 			Needle needle = new Needle(token, register.getHaystack());
