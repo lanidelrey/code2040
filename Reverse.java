@@ -6,17 +6,17 @@
 
 public class Reverse {
 	
-	public Reverse(String input) {
-		target = input;
+	private String result;
+	
+	public String getResult() {
+		return result;
 	}
 	
 	public String reverseString() {
-		StringBuffer sb = new StringBuffer(target);
+		StringBuffer sb = new StringBuffer(getResult());
 		String reversed = sb.reverse().toString();
+		System.out.println("original: " + sb);
+		System.out.println("reversed: " + reversed);
 		return reversed;
 	}
-	
-	/**private instance variables**/
-	private String target;
-	
 }
