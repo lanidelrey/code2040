@@ -19,12 +19,8 @@ public class Time {
 		return interval;
 	}
 	
-	public String[] getFinalArray() {
-		return result.searchPrefixes();
-	}
-	
 	@Override
 	public String toString() {
-		return "PrefixJSON [result = " + result + "]";
+		return "Time [datestamp = " + datestamp + ", interval = " + interval + "]";
 	}
 }
