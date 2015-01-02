@@ -19,4 +19,9 @@ public class Reverse {
 		System.out.println("reversed: " + reversed);
 		return reversed;
 	}
+	
+	@Override
+	public String toString() {
+		return "Reverse [result = " + result + "]";
+	}
 }
