@@ -32,6 +32,9 @@ public class Register {
 		
 		// Challenge 3: find non-prefixed words
 		register.workPrefixArray();
+		
+		// Challenge 4: add interval to date
+		register.getDateStamps();
 	}
 	
 	/**general JSON methods**/
