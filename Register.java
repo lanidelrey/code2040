@@ -83,14 +83,14 @@ public class Register {
 	
 	/**Challenge 1**/
 	private void reverseString() throws IOException {
+		Gson gson = new GsonBuilder().create();
 		String getStrUrl = "http://challenge.code2040.org/api/getstring";
-		String input = register.strip(register.getJson(getStrUrl, tokenMap()));
+		String json = register.getJson(getStrUrl, tokenMap());
 		
-		Reverse reverse = new Reverse(input);
-		String reversed = reverse.reverseString();
-		
+		Reverse reverse = gson.fromJson(json, Reverse.class);
+
 		String valStrUrl = "http://challenge.code2040.org/api/validatestring";
-		register.getJson(valStrUrl, stringMap(reversed));
+		register.getJson(valStrUrl, stringMap(reverse.reverseString()));
 	}
 	
 	
