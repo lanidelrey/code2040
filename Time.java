@@ -18,10 +18,6 @@ public class Time {
 		int inter = Integer.parseInt(interval);
 		DateTime newDate = date.plusSeconds(inter);	// sum of interval and datestamp
 		
-		System.out.println("datestamp: " + date.toString());
-		System.out.println("interval: " + inter);
-		System.out.println("new: " + newDate.toString());
-		
 		return newDate.toString();
 	}
 	
