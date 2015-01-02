@@ -5,7 +5,11 @@
  * It also completes subsequent challenges by calling instances of other classes.
  * 
  * Reflections on learning process:
- * -	learned how to search, download, and implement external JRE libraries
+ * -	learned how to search, download, and implement external JRE libraries (i.e. 
+ * 		Joda-Time for ISO format time handling)
+ * -	experimented Jackson and MapWrapper implementations for JSON handling before
+ * 		settling on Google GSON
+ * -	
  */
 
 import java.io.*;	// allows use of IOException handling
