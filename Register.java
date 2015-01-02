@@ -60,7 +60,7 @@ public class Register {
 		ds.flush();
 		ds.close();
 		
-		// get response
+		// get response, in strings
 		InputStream is = connection.getInputStream();
 		BufferedReader rd = new BufferedReader(new InputStreamReader(is));
 		String line = "";
