@@ -42,9 +42,11 @@ public class Register {
 		return response;
 	}
 	
-	//
+	// converts JSON string to http request, posted to URL
 	private String makeRequest(String url, String json) throws IOException {
 		System.out.println("sending http POST request");
+		
+		// sets up connection to server, given URL
 		URL obj = new URL(url);
 		HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
 		connection.setRequestMethod("POST");
@@ -52,13 +54,13 @@ public class Register {
 		connection.setDoInput(true);
 		connection.setDoOutput(true);
 		
-		//send request
+		// send POST request
 		DataOutputStream ds = new DataOutputStream(connection.getOutputStream());
 		ds.writeBytes(json);
 		ds.flush();
 		ds.close();
 		
-		//get response
+		// get response
 		InputStream is = connection.getInputStream();
 		BufferedReader rd = new BufferedReader(new InputStreamReader(is));
 		String line = "";
