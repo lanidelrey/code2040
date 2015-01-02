@@ -9,7 +9,7 @@ import java.util.*;
 public class Time {
 	
 	private String datestamp;
-	private String datestamp;
+	private String interval;
 	
 	public Prefix getResult() {
 		return result;
