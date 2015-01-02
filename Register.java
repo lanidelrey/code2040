@@ -105,7 +105,7 @@ public class Register {
 		int index = result.getIndex();
 		
 		String valStrUrl = "http://challenge.code2040.org/api/validateneedle";
-		register.makeRequest(valStrUrl, register.needleMap(index));
+		register.getJson(valStrUrl, register.needleMap(index));
 	}
 	
 	
@@ -179,19 +179,6 @@ public class Register {
 		map.put("token", token);
 		map.put("datestamp", time);
 		return map;
-	}
-	
-	private static String needleJson() {
-		try {
-			Needle needle = new Needle(token, register.getHaystack());
-			ObjectMapper mapper = new ObjectMapper();
-			String json = mapper.writeValueAsString(needle);
-			System.out.print("json: " + json);
-			return json;
-		} catch (IOException e) {
-			e.printStackTrace();
-			return "IOException error";
-		}
 	}
 	
 	/**private instance variables**/
