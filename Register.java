@@ -3,13 +3,16 @@
  * -------------------------------
  * This class sends registration info to Code2040's website.
  * It also completes subsequent challenges by calling instances of other classes.
+ * 
+ * Reflections on learning process:
+ * -	learned how to search, download, and implement external 
  */
 
 import java.io.*;
 import java.net.*;
 import java.util.*;
 
-import com.google.gson.Gson;
+import com.google.gson.Gson;	// facilitates JSON handling
 import com.google.gson.GsonBuilder;
 
 public class Register {
