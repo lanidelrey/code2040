@@ -11,6 +11,8 @@
  * 		settling on Google GSON
  * -	learned how to unpack nested JSON dictionaries of multiple types by creating
  * 		nested classes
+ * -	learned how to set up HTTP request to handle posted information (and its
+ * 		destination) and subsequent response
  */
 
 import java.io.*;	// allows use of IOException handling
