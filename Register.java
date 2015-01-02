@@ -126,7 +126,7 @@ public class Register {
 	
 	
 	/**Challenge 4**/
-	private String getDateStamps() throws IOException {
+	private void getDateStamps() throws IOException {
 		String timeUrl = "http://challenge.code2040.org/api/time";
 		System.out.println(register.getJson(timeUrl, tokenMap()));
 	}
