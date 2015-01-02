@@ -17,6 +17,8 @@
  * Things to improve with further manipulation:
  * -	consolidate commonly used method sequences into one method with passed-in
  * 		parameters to allow customization (i.e. HashMap creation for JSON elements)
+ * -	consolidate classes for nested JSON elements by creating method to pull nested
+ * 		elements in a single pass
  */
 
 import java.io.*;	// allows use of IOException handling
